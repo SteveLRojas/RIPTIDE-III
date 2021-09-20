@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Sep 19 16:10:00 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : R3_PVP
+Top-level Entity Name : R3_PVP
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 3,102 / 6,272 ( 49 % )
+    Total combinational functions : 2,625 / 6,272 ( 42 % )
+    Dedicated logic registers : 1,995 / 6,272 ( 32 % )
+Total registers : 1995
+Total pins : 70 / 92 ( 76 % )
+Total virtual pins : 0
+Total memory bits : 177,152 / 276,480 ( 64 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )

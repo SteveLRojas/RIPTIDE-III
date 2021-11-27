@@ -1,4 +1,4 @@
-module timer(input logic clk, rst, ce, wren, ren, hsync, vsync, output logic timer_int, input logic[1:0] addr, input logic[7:0] from_cpu, output logic[7:0] to_cpu);
+module timer(input logic clk, rst, ce, wren, hsync, vsync, output logic timer_int, input logic[1:0] addr, input logic[7:0] from_cpu, output logic[7:0] to_cpu);
 //NOTE: the hsync and vsync inputs are active low.
 logic[23:0] counter;
 logic[5:0] status;
@@ -41,15 +41,15 @@ begin
 				2'h3: count_active <= 1'b0;	//stop counting if address 3 is written
 				endcase
 			end
-			if(ren)
-			begin
+			//if(ren)
+			//begin
 				case(addr)
 				2'h0: to_cpu <= counter[7:0];
 				2'h1: to_cpu <= counter[15:8];
 				2'h2: to_cpu <= counter[23:16];
 				2'h3: to_cpu <= {2'b00, status};
 				endcase
-			end
+			//end
 		end
 	end
 end

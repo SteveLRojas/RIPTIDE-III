@@ -218,6 +218,8 @@ Added interrupt outputs to timer module.
 Instantiated interrupt_controller on top level.
 Made IVL and IVR registers readable.
 Fixed bug in PC module.
+Fixed bug in PC module that caused the CPU to crash when a call instruction is executed at the same time as a data cache miss happens.
+Fixed bug in timer module that caused it to respond too late to CPU reads.
 
 TODO:
 	(done) Write new PC module with support for interrupts.

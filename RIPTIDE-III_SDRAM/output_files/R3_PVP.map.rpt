@@ -1,5 +1,5 @@
 Analysis & Synthesis report for R3_PVP
-Sun Sep 19 16:08:45 2021
+Thu Nov 11 19:17:26 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -65,15 +65,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Sep 19 16:08:44 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 11 19:17:26 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; R3_PVP                                      ;
 ; Top-level Entity Name              ; R3_PVP                                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 3,667                                       ;
-;     Total combinational functions  ; 2,625                                       ;
-;     Dedicated logic registers      ; 2,003                                       ;
-; Total registers                    ; 2003                                        ;
+; Total logic elements               ; 3,666                                       ;
+;     Total combinational functions  ; 2,624                                       ;
+;     Dedicated logic registers      ; 2,004                                       ;
+; Total registers                    ; 2004                                        ;
 ; Total pins                         ; 70                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 177,152                                     ;
@@ -182,12 +182,12 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
+;     Processor 2            ;   0.3%      ;
 ;     Processor 3            ;   0.2%      ;
 ;     Processor 4            ;   0.2%      ;
-;     Processor 5            ;   0.2%      ;
-;     Processor 6            ;   0.2%      ;
-;     Processor 7            ;   0.2%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
+;     Processor 7            ;   0.1%      ;
 ;     Processor 8            ;   0.1%      ;
 +----------------------------+-------------+
 
@@ -253,20 +253,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                             ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 3,667                                                                             ;
+; Estimated Total logic elements              ; 3,666                                                                             ;
 ;                                             ;                                                                                   ;
-; Total combinational functions               ; 2625                                                                              ;
+; Total combinational functions               ; 2624                                                                              ;
 ; Logic element usage by number of LUT inputs ;                                                                                   ;
-;     -- 4 input functions                    ; 1409                                                                              ;
-;     -- 3 input functions                    ; 864                                                                               ;
-;     -- <=2 input functions                  ; 352                                                                               ;
+;     -- 4 input functions                    ; 1369                                                                              ;
+;     -- 3 input functions                    ; 914                                                                               ;
+;     -- <=2 input functions                  ; 341                                                                               ;
 ;                                             ;                                                                                   ;
 ; Logic elements by mode                      ;                                                                                   ;
-;     -- normal mode                          ; 2440                                                                              ;
+;     -- normal mode                          ; 2439                                                                              ;
 ;     -- arithmetic mode                      ; 185                                                                               ;
 ;                                             ;                                                                                   ;
-; Total registers                             ; 2003                                                                              ;
-;     -- Dedicated logic registers            ; 2003                                                                              ;
+; Total registers                             ; 2004                                                                              ;
+;     -- Dedicated logic registers            ; 2004                                                                              ;
 ;     -- I/O registers                        ; 0                                                                                 ;
 ;                                             ;                                                                                   ;
 ; I/O pins                                    ; 70                                                                                ;
@@ -278,8 +278,8 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 1                                                                                 ;
 ;                                             ;                                                                                   ;
 ; Maximum fan-out node                        ; PLL0:PLL_inst|altpll:altpll_component|PLL0_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 2175                                                                              ;
-; Total fan-out                               ; 17502                                                                             ;
+; Maximum fan-out                             ; 2176                                                                              ;
+; Total fan-out                               ; 17505                                                                             ;
 ; Average fan-out                             ; 3.53                                                                              ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 
@@ -289,7 +289,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                  ; Entity Name            ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
-; |R3_PVP                                         ; 2625 (56)           ; 2003 (27)                 ; 177152      ; 0            ; 0       ; 0         ; 70   ; 0            ; |R3_PVP                                                                                                              ; R3_PVP                 ; work         ;
+; |R3_PVP                                         ; 2624 (57)           ; 2004 (27)                 ; 177152      ; 0            ; 0       ; 0         ; 70   ; 0            ; |R3_PVP                                                                                                              ; R3_PVP                 ; work         ;
 ;    |MSC:MSC_inst|                               ; 20 (20)             ; 28 (28)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|MSC:MSC_inst                                                                                                 ; MSC                    ; work         ;
 ;    |MULTIPLEXED_HEX_DRIVER:multi_hex|           ; 64 (18)             ; 34 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|MULTIPLEXED_HEX_DRIVER:multi_hex                                                                             ; MULTIPLEXED_HEX_DRIVER ; work         ;
 ;       |frame_clk:frame_clk_inst|                ; 18 (18)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|MULTIPLEXED_HEX_DRIVER:multi_hex|frame_clk:frame_clk_inst                                                    ; frame_clk              ; work         ;
@@ -303,14 +303,14 @@ refer to the applicable agreement for further details.
 ;    |PRG_ROM:PRG_inst|                           ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|PRG_ROM:PRG_inst                                                                                             ; PRG_ROM                ; work         ;
 ;       |altsyncram:altsyncram_component|         ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|PRG_ROM:PRG_inst|altsyncram:altsyncram_component                                                             ; altsyncram             ; work         ;
 ;          |altsyncram_0bb1:auto_generated|       ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|PRG_ROM:PRG_inst|altsyncram:altsyncram_component|altsyncram_0bb1:auto_generated                              ; altsyncram_0bb1        ; work         ;
-;    |RIPTIDE_III:CPU_inst|                       ; 1044 (104)          ; 927 (165)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst                                                                                         ; RIPTIDE_III            ; work         ;
+;    |RIPTIDE_III:CPU_inst|                       ; 1043 (104)          ; 928 (165)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst                                                                                         ; RIPTIDE_III            ; work         ;
 ;       |ALU:ALU0|                                ; 49 (49)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|ALU:ALU0                                                                                ; ALU                    ; work         ;
-;       |PC:PC0|                                  ; 452 (254)           ; 460 (167)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0                                                                                  ; PC                     ; work         ;
-;          |call_stack:cstack0|                   ; 198 (198)           ; 293 (293)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|call_stack:cstack0                                                               ; call_stack             ; work         ;
-;       |decode_unit:decode_unit0|                ; 121 (121)           ; 85 (85)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0                                                                ; decode_unit            ; work         ;
-;       |hazard_unit:hazard_unit0|                ; 24 (24)             ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|hazard_unit:hazard_unit0                                                                ; hazard_unit            ; work         ;
+;       |PC:PC0|                                  ; 456 (255)           ; 461 (168)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0                                                                                  ; PC                     ; work         ;
+;          |call_stack:cstack0|                   ; 201 (201)           ; 293 (293)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|call_stack:cstack0                                                               ; call_stack             ; work         ;
+;       |decode_unit:decode_unit0|                ; 116 (116)           ; 85 (85)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0                                                                ; decode_unit            ; work         ;
+;       |hazard_unit:hazard_unit0|                ; 23 (23)             ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|hazard_unit:hazard_unit0                                                                ; hazard_unit            ; work         ;
 ;       |mask_unit:mask0|                         ; 7 (7)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|mask_unit:mask0                                                                         ; mask_unit              ; work         ;
-;       |reg_file:reg_file0|                      ; 136 (136)           ; 144 (144)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|reg_file:reg_file0                                                                      ; reg_file               ; work         ;
+;       |reg_file:reg_file0|                      ; 137 (137)           ; 144 (144)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|reg_file:reg_file0                                                                      ; reg_file               ; work         ;
 ;       |right_rotate:right_rotate0|              ; 31 (31)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|right_rotate:right_rotate0                                                              ; right_rotate           ; work         ;
 ;       |right_rotate:right_rotate1|              ; 16 (16)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|right_rotate:right_rotate1                                                              ; right_rotate           ; work         ;
 ;       |shift_merge:shift_merge0|                ; 104 (104)           ; 39 (39)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|shift_merge:shift_merge0                                                                ; shift_merge            ; work         ;
@@ -323,7 +323,7 @@ refer to the applicable agreement for further details.
 ;       |VGA_RAM:RAM_VGA|                         ; 0 (0)               ; 0 (0)                     ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|VGA:VGA_inst|VGA_RAM:RAM_VGA                                                                                 ; VGA_RAM                ; work         ;
 ;          |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|VGA:VGA_inst|VGA_RAM:RAM_VGA|altsyncram:altsyncram_component                                                 ; altsyncram             ; work         ;
 ;             |altsyncram_60i2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|VGA:VGA_inst|VGA_RAM:RAM_VGA|altsyncram:altsyncram_component|altsyncram_60i2:auto_generated                  ; altsyncram_60i2        ; work         ;
-;    |d_cache:d_cache_inst|                       ; 240 (240)           ; 35 (35)                   ; 35328       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|d_cache:d_cache_inst                                                                                         ; d_cache                ; work         ;
+;    |d_cache:d_cache_inst|                       ; 239 (239)           ; 35 (35)                   ; 35328       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|d_cache:d_cache_inst                                                                                         ; d_cache                ; work         ;
 ;       |p_mem:d_mem_inst|                        ; 0 (0)               ; 0 (0)                     ; 35328       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|d_cache:d_cache_inst|p_mem:d_mem_inst                                                                        ; p_mem                  ; work         ;
 ;          |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 35328       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|d_cache:d_cache_inst|p_mem:d_mem_inst|altsyncram:altsyncram_component                                        ; altsyncram             ; work         ;
 ;             |altsyncram_k6g1:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 35328       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|d_cache:d_cache_inst|p_mem:d_mem_inst|altsyncram:altsyncram_component|altsyncram_k6g1:auto_generated         ; altsyncram_k6g1        ; work         ;
@@ -469,12 +469,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2003  ;
-; Number of registers using Synchronous Clear  ; 228   ;
+; Total registers                              ; 2004  ;
+; Number of registers using Synchronous Clear  ; 224   ;
 ; Number of registers using Synchronous Load   ; 180   ;
-; Number of registers using Asynchronous Clear ; 303   ;
+; Number of registers using Asynchronous Clear ; 307   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1383  ;
+; Number of registers using Clock Enable       ; 1416  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -506,92 +506,91 @@ Encoding Type:  One-Hot
 +----------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (No Restructuring Performed)                                                                                                                   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|word_address[0]                 ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|ps2_host:ps2_host_inst|rx_data[2]      ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|refresh_timer[1]                ;
-; 3:1                ; 36 bits   ; 72 LEs        ; 36 LEs               ; 36 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|mask_L1[0]                               ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|ps2_host:ps2_host_inst|tx_shift_reg[2] ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|pixel_count[5]                   ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|to_cpu[7]                                    ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|to_cpu[4]                                    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |R3_PVP|MSC:MSC_inst|p2_reset_reg                                     ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|queue_8_8:tx_queue|write_addr[0]           ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|horiz_scaler[2]                  ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|I_alternate[9]  ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|queue_8_8:tx_queue|write_addr[1]       ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |R3_PVP|interrupt_controller:intcon_inst|control[4]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|interrupt_controller:intcon_inst|status[3]                    ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|rx_data[1]                  ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|A_current_I_alternate[4]          ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|call_stack:cstack0|address[1]     ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|queue_8_8:rx_queue|read_addr[1]        ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|queue_8_8:rx_queue|read_addr[2]            ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|queue_8_8:tx_queue|read_addr[1]            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|A_pipe2[11]                       ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|XEC             ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|A_pipe0[9]                        ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|queue_8_8:tx_queue|read_addr[0]        ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|ps2_host:ps2_host_inst|timer[1]        ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|tx_timer[2]                 ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|B                                ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|p_cache:p_cache_inst|CPU_address_hold[14]                     ;
-; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |R3_PVP|keyboard:keyboard_inst|ps2_host:ps2_host_inst|rx_shift_reg[9] ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|line_count[9]                    ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|CALL            ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|ALU:ALU0|alu_reg[1]                      ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|right_rotate:right_rotate0|rotate_reg[6] ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|right_rotate:right_rotate1|rotate_reg[5] ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|A_current_I[9]                    ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|counter[18]                                  ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|counter[14]                                  ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|counter[7]                                   ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|rx_timer[0]                 ;
-; 5:1                ; 13 bits   ; 39 LEs        ; 26 LEs               ; 13 LEs                 ; Yes        ; |R3_PVP|d_cache:d_cache_inst|CPU_address_hold[6]                      ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|sdram_a[5]                      ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|col_count[3]                     ;
-; 15:1               ; 8 bits    ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|reg_file:reg_file0|a_reg[1]              ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|I_reg[3]        ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|cell_count[3]                    ;
-; 9:1                ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|IV_in[4]                                 ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|init_refresh_count[1]           ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|tx_frame[5]                 ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|alu_op_reg[1]   ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|latch_wren_reg  ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|cell_line[1]                     ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|vert_scaler[1]                   ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|data_hold[15]                   ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|data_hold[22]                   ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|data_hold[42]                   ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|data_hold[61]                   ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|row_count[7]                     ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 4 LEs                ; 10 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|RC_reg          ;
-; 7:1                ; 5 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|PC_reg[6]                         ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|PC_reg[1]                         ;
-; 7:1                ; 16 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|address_hold[3]                 ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|PC_reg[13]                        ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 12 LEs               ; 8 LEs                  ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|address_hold[10]                ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|rx_frame[3]                 ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|data_out[12]                    ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |R3_PVP|MULTIPLEXED_HEX_DRIVER:multi_hex|Mux5                         ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|Mux2                             ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|RIPTIDE_III:CPU_inst|reg_file:reg_file0|a_data[2]             ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|RIPTIDE_III:CPU_inst|alu_b_mux_out[4]                         ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |R3_PVP|p_cache:p_cache_inst|Mux0                                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[4]                               ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[38]                              ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[17]                              ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[54]                              ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[14]                              ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[47]                              ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[30]                              ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[58]                              ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |R3_PVP|RIPTIDE_III:CPU_inst|shift_merge:shift_merge0|Mux2            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (No Restructuring Performed)                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|word_address[0]                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|ps2_host:ps2_host_inst|rx_data[2]        ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|refresh_timer[3]                  ;
+; 3:1                ; 36 bits   ; 72 LEs        ; 36 LEs               ; 36 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|regf_wren1                                 ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|ps2_host:ps2_host_inst|tx_shift_reg[2]   ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|pixel_count[9]                     ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|to_cpu[7]                                      ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|to_cpu[4]                                      ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |R3_PVP|MSC:MSC_inst|p2_flush_reg                                       ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|queue_8_8:tx_queue|write_addr[0]             ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|horiz_scaler[2]                    ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|I_alternate[10]   ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|queue_8_8:tx_queue|write_addr[1]         ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |R3_PVP|interrupt_controller:intcon_inst|control[2]                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|interrupt_controller:intcon_inst|status[7]                      ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|rx_data[7]                    ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|A_current_I_alternate[3]            ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|queue_8_8:rx_queue|read_addr[2]          ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|queue_8_8:rx_queue|read_addr[1]              ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|queue_8_8:tx_queue|read_addr[0]              ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|A_pipe1[14]                         ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|JMP               ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|A_pipe0[10]                         ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|queue_8_8:tx_queue|read_addr[0]          ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|ps2_host:ps2_host_inst|timer[0]          ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|tx_timer[3]                   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|B                                  ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|p_cache:p_cache_inst|CPU_address_hold[11]                       ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |R3_PVP|keyboard:keyboard_inst|ps2_host:ps2_host_inst|rx_shift_reg[1]   ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|line_count[1]                      ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|CALL              ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|ALU:ALU0|alu_reg[7]                        ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|right_rotate:right_rotate0|rotate_reg[7]   ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|right_rotate:right_rotate1|rotate_reg[7]   ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|A_current_I[1]                      ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|counter[21]                                    ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|counter[10]                                    ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|counter[6]                                     ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|rx_timer[4]                   ;
+; 5:1                ; 13 bits   ; 39 LEs        ; 26 LEs               ; 13 LEs                 ; Yes        ; |R3_PVP|d_cache:d_cache_inst|CPU_address_hold[7]                        ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|sdram_a[3]                        ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|col_count[4]                       ;
+; 15:1               ; 8 bits    ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|reg_file:reg_file0|a_reg[5]                ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|I_reg[9]          ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|cell_count[3]                      ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|IV_in[4]                                   ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|init_refresh_count[2]             ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|tx_frame[5]                   ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|alu_op_reg[0]     ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|SC_reg            ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|cell_line[0]                       ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|vert_scaler[1]                     ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|data_hold[1]                      ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|data_hold[31]                     ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|data_hold[44]                     ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|data_hold[58]                     ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|row_count[1]                       ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 4 LEs                ; 10 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|rotate_source_reg ;
+; 7:1                ; 5 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|PC_reg[3]                           ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|PC_reg[2]                           ;
+; 7:1                ; 16 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|address_hold[7]                   ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|PC_reg[9]                           ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 12 LEs               ; 8 LEs                  ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|address_hold[12]                  ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|rx_frame[2]                   ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|SDRAM_DP64_I:SDRAM_controller|data_out[9]                       ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |R3_PVP|MULTIPLEXED_HEX_DRIVER:multi_hex|Mux1                           ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|Mux2                               ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|RIPTIDE_III:CPU_inst|reg_file:reg_file0|a_data[1]               ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|RIPTIDE_III:CPU_inst|alu_b_mux_out[2]                           ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |R3_PVP|p_cache:p_cache_inst|Mux4                                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[7]                                 ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[36]                                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[19]                                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[52]                                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[8]                                 ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[40]                                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[31]                                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[56]                                ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |R3_PVP|RIPTIDE_III:CPU_inst|shift_merge:shift_merge0|Mux5              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -1434,36 +1433,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 70                          ;
-; cycloneiii_ff         ; 2003                        ;
-;     CLR               ; 39                          ;
+; cycloneiii_ff         ; 2004                        ;
+;     CLR               ; 40                          ;
 ;     CLR SCLR          ; 1                           ;
 ;     CLR SLD           ; 64                          ;
-;     ENA               ; 1112                        ;
-;     ENA CLR           ; 183                         ;
+;     ENA               ; 1145                        ;
+;     ENA CLR           ; 186                         ;
 ;     ENA CLR SLD       ; 16                          ;
-;     ENA SCLR          ; 38                          ;
+;     ENA SCLR          ; 35                          ;
 ;     ENA SCLR SLD      ; 14                          ;
 ;     ENA SLD           ; 20                          ;
-;     SCLR              ; 136                         ;
+;     SCLR              ; 135                         ;
 ;     SCLR SLD          ; 39                          ;
 ;     SLD               ; 27                          ;
-;     plain             ; 314                         ;
+;     plain             ; 282                         ;
 ; cycloneiii_io_obuf    ; 16                          ;
-; cycloneiii_lcell_comb ; 2629                        ;
+; cycloneiii_lcell_comb ; 2628                        ;
 ;     arith             ; 185                         ;
 ;         2 data inputs ; 143                         ;
 ;         3 data inputs ; 42                          ;
-;     normal            ; 2444                        ;
+;     normal            ; 2443                        ;
 ;         0 data inputs ; 3                           ;
 ;         1 data inputs ; 24                          ;
-;         2 data inputs ; 186                         ;
-;         3 data inputs ; 822                         ;
-;         4 data inputs ; 1409                        ;
+;         2 data inputs ; 175                         ;
+;         3 data inputs ; 872                         ;
+;         4 data inputs ; 1369                        ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 170                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.30                        ;
-; Average LUT depth     ; 3.04                        ;
+; Average LUT depth     ; 3.05                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1472,7 +1471,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:24     ;
+; Top            ; 00:00:26     ;
 +----------------+--------------+
 
 
@@ -1482,7 +1481,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Sep 19 16:07:50 2021
+    Info: Processing started: Thu Nov 11 19:16:26 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RIPTIDE-III_SDRAM -c R3_PVP
 Info (16303): Aggressive Performance optimization mode selected -- timing performance will be prioritized at the potential cost of increased logic area and compilation time
 Info (20032): Parallel compilation is enabled and will use up to 8 processors
@@ -1746,7 +1745,7 @@ Info (12128): Elaborating entity "mask_unit" for hierarchy "RIPTIDE_III:CPU_inst
 Info (12128): Elaborating entity "ALU" for hierarchy "RIPTIDE_III:CPU_inst|ALU:ALU0" File: E:/RIPTIDE-III_SDRAM/CPU/RIPTIDE-III.v Line: 373
 Info (12128): Elaborating entity "shift_merge" for hierarchy "RIPTIDE_III:CPU_inst|shift_merge:shift_merge0" File: E:/RIPTIDE-III_SDRAM/CPU/RIPTIDE-III.v Line: 385
 Info (12128): Elaborating entity "PC" for hierarchy "RIPTIDE_III:CPU_inst|PC:PC0" File: E:/RIPTIDE-III_SDRAM/CPU/RIPTIDE-III.v Line: 407
-Info (12128): Elaborating entity "call_stack" for hierarchy "RIPTIDE_III:CPU_inst|PC:PC0|call_stack:cstack0" File: E:/RIPTIDE-III_SDRAM/CPU/PC.v Line: 44
+Info (12128): Elaborating entity "call_stack" for hierarchy "RIPTIDE_III:CPU_inst|PC:PC0|call_stack:cstack0" File: E:/RIPTIDE-III_SDRAM/CPU/PC.v Line: 45
 Info (12128): Elaborating entity "decode_unit" for hierarchy "RIPTIDE_III:CPU_inst|decode_unit:decode_unit0" File: E:/RIPTIDE-III_SDRAM/CPU/RIPTIDE-III.v Line: 441
 Info (12128): Elaborating entity "hazard_unit" for hierarchy "RIPTIDE_III:CPU_inst|hazard_unit:hazard_unit0" File: E:/RIPTIDE-III_SDRAM/CPU/RIPTIDE-III.v Line: 475
 Warning (14284): Synthesized away the following node(s):
@@ -1795,17 +1794,17 @@ Info (128001): Physical synthesis optimizations for speed complete: elapsed time
 Info (144001): Generated suppressed messages file E:/RIPTIDE-III_SDRAM/output_files/R3_PVP.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3963 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3962 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 45 output pins
     Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 3722 logic cells
+    Info (21061): Implemented 3721 logic cells
     Info (21064): Implemented 170 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 749 megabytes
-    Info: Processing ended: Sun Sep 19 16:08:45 2021
-    Info: Elapsed time: 00:00:55
+    Info: Peak virtual memory: 751 megabytes
+    Info: Processing ended: Thu Nov 11 19:17:26 2021
+    Info: Elapsed time: 00:01:00
     Info: Total CPU time (on all processors): 00:01:39
 
 

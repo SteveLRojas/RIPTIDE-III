@@ -20,6 +20,7 @@ module PC(
 		output wire[15:0] A);
 		
 reg prev_hazard;
+reg prev_data_hazard;
 reg prev_XEC;
 reg p_miss;
 reg prev_p_miss;
@@ -41,11 +42,12 @@ assign reg_nz = |register_data;
 assign stack_in = interrupt ? A_pipe2 : A_pipe1;
 assign stack_pop = RET & (~branch_hazard) & (~((NZT2 & reg_nz) | XEC2) & (~CALL2)) & ~interrupt;
 
-call_stack cstack0(.rst(rst), .clk(clk), .push(CALL2 | interrupt), .pop(stack_pop), .data_in(stack_in), .data_out(stack_out));
+call_stack cstack0(.rst(rst), .clk(clk), .en(~prev_data_hazard | interrupt), .push(CALL2 | interrupt), .pop(stack_pop), .data_in(stack_in), .data_out(stack_out));
 
 always @(posedge clk)
 begin
 	A_next_I <= PC_reg;
+	prev_data_hazard <= data_hazard;
 	prev_pipeline_flush <= pipeline_flush;
 	prev_ret_taken <= RET & ~branch_hazard;
 	prev_jmp_taken <= JMP & ~branch_hazard;
@@ -100,7 +102,7 @@ begin
 			A_pipe2 <= A_pipe1;
 		end
 		
-		if(prev_pipeline_flush | prev_jmp_taken | prev_ret_taken)
+		if(prev_pipeline_flush | prev_jmp_taken | prev_ret_taken)	//assign new address to flushed instructions in case of interrupt.
 		begin
 			A_current_I_alternate <= PC_reg;
 			A_current_I <= PC_reg;

@@ -343,7 +343,7 @@ timer timer_inst(
 		.rst(rst),
 		.ce(timer_en),
 		.wren(IO_wren),
-		.ren(IO_ren),
+		//.ren(IO_ren),
 		.hsync(HSYNC),
 		.vsync(VSYNC),
 		.timer_int(timer_int),

@@ -62,7 +62,7 @@ endmodule
 // Retrieval info: PRIVATE: AclrData NUMERIC "0"
 // Retrieval info: PRIVATE: AclrOutput NUMERIC "0"
 // Retrieval info: PRIVATE: BYTE_ENABLE NUMERIC "0"
-// Retrieval info: PRIVATE: BYTE_SIZE NUMERIC "8"
+// Retrieval info: PRIVATE: BYTE_SIZE NUMERIC "9"
 // Retrieval info: PRIVATE: BlankMemory NUMERIC "1"
 // Retrieval info: PRIVATE: CLOCK_ENABLE_INPUT_A NUMERIC "0"
 // Retrieval info: PRIVATE: CLOCK_ENABLE_OUTPUT_A NUMERIC "0"

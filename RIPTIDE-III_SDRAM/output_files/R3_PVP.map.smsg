@@ -1,3 +1,1 @@
-Warning (10273): Verilog HDL warning at sdr.sv(971): extended using "x" or "z" File: E:/RIPTIDE-III_SDRAM/sdr.sv Line: 971
-Warning (10273): Verilog HDL warning at sdr.sv(974): extended using "x" or "z" File: E:/RIPTIDE-III_SDRAM/sdr.sv Line: 974
-Warning (10268): Verilog HDL information at sdr.sv(187): always construct contains both blocking and non-blocking assignments File: E:/RIPTIDE-III_SDRAM/sdr.sv Line: 187
+Warning (10268): Verilog HDL information at I2C_phy.sv(45): always construct contains both blocking and non-blocking assignments File: C:/Users/Steve/Workspace/RIPTIDE-III_SDRAM/I2C_phy.sv Line: 45

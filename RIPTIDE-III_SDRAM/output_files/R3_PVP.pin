@@ -165,8 +165,8 @@ MSEL0                        : 94        :        :                   :         
 GND                          : 95        : gnd    :                   :         :           :                
 MSEL1                        : 96        :        :                   :         : 6         :                
 MSEL2                        : 97        :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 98        :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 99        :        :                   :         : 6         :                
+i2c_sda                      : 98        : bidir  : 3.3-V LVCMOS      :         : 6         : Y              
+i2c_scl                      : 99        : output : 3.3-V LVCMOS      :         : 6         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 100       :        :                   :         : 6         :                
 HSYNC                        : 101       : output : 3.3-V LVCMOS      :         : 6         : Y              
 VCCINT                       : 102       : power  :                   : 1.2V    :           :                

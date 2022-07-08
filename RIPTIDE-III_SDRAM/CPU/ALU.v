@@ -23,15 +23,14 @@ begin
 		3'b110: alu_reg <= in_a & in_b;
 		3'b111: alu_reg <= in_a ^ in_b;
 		endcase
-		if(op == 3'b001)
-			OVF_reg <= add_result[8];
-//		if(in_a != 8'h00)
-//			NZ_reg <= 1'b1;
-//		else
-//			NZ_reg <= 1'b0;
+//		if(op == 3'b001)
+//			OVF_reg <= add_result[8];
 	end
+	if (~data_hazard && (op == 3'b001))
+	begin 	
+		OVF_reg <= add_result[8];
+	end 
 end
 assign alu_out = alu_reg;
 assign OVF_out = OVF_reg;
-//assign NZ_out = NZ_reg;
 endmodule

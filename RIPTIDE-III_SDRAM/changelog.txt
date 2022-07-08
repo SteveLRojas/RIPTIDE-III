@@ -217,9 +217,6 @@ Added interrupt outputs to keyboard module.
 Added interrupt outputs to timer module.
 Instantiated interrupt_controller on top level.
 Made IVL and IVR registers readable.
-Fixed bug in PC module.
-Fixed bug in PC module that caused the CPU to crash when a call instruction is executed at the same time as a data cache miss happens.
-Fixed bug in timer module that caused it to respond too late to CPU reads.
 
 TODO:
 	(done) Write new PC module with support for interrupts.
@@ -228,3 +225,13 @@ TODO:
 	(done) Make sure that data in address pipeline is valid during interrupts.
 	(done) Make sure that XEC instructions do not return before target instruction is fetched successfully.
 	Have separate OVF path that bypasses right rotate and mask units.
+
+Revision 12:
+Copied CPU fixes from RIPTIDE-III_DragonBoard_V10 project revision 12
+Copied other files from the same project:
+	Copied button_debounce module.
+	Copied interrupt_controller module.
+	Copied ps2_host module.
+	Copied queue_8_8 module (replaced the one in serial.sv).
+	Copied I2C_ri.sv
+	Copied I2C_phy.sv

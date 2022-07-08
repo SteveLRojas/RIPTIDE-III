@@ -85,29 +85,24 @@ assign a_data = a_forward0 ? w_data : (a_forward1 ? prev_w_data : a_reg);
 assign aux_data = aux_forward ? w_data : aux;
 endmodule
 
-module call_stack(input wire rst, clk, en, push, pop, input wire[15:0] data_in, output wire[15:0] data_out);
+module call_stack(input wire rst, clk, push, pop, input wire[15:0] data_in, output wire[15:0] data_out);
 reg[3:0] address;
 reg[15:0] input_buf;
 reg[15:0] output_buf;
 reg prev_push;
 (* ramstyle = "logic" *) reg[15:0] stack_mem[15:0];
 
-always @(posedge clk or posedge rst)
+always @(posedge clk)
 begin
+	input_buf <= data_in;
+	prev_push <= push;
+	output_buf <= stack_mem[address];
+	if(prev_push)
+		stack_mem[address] <= input_buf;
 	if(rst)
-	begin
 		address <= 4'b0000;
-	end
-	else if(en)
-	begin
-		input_buf <= data_in;
-		prev_push <= push;
-		output_buf <= stack_mem[address];
-		if(prev_push)
-			stack_mem[address] <= input_buf;
-		if(push | pop)
-			address <= address + {{3{pop}}, 1'b1};
-	end
+	else if(push | pop)
+		address <= address + {{3{pop}}, 1'b1};
 end
 assign data_out = output_buf;
 endmodule

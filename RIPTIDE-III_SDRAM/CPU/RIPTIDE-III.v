@@ -50,7 +50,8 @@ wire[7:0] alu_out;
 wire alu_b_source;
 wire[7:0] alu_I_field;
 wire OVF;
-wire NZ;
+//wire NZ;
+wire take_branch;
 wire decoder_RST;
 wire SC;	//select command
 wire WC;	//write command
@@ -398,12 +399,15 @@ PC PC0(
 		.hazard(hazard),
 		.data_hazard(data_hazard),
 		.branch_hazard(branch_hazard),
-		.pipeline_flush(pipeline_flush),
+		//.pipeline_flush(pipeline_flush),
 		.p_cache_miss(p_cache_miss),
 		.register_data(a_data),
 		.PC_I_field(PC_I_field),
 		.PC_I_field2(PC_I_field2),
-		.reg_nz(NZ),
+		.take_branch(take_branch),
+		.decoder_rst(decoder_RST),
+		.pipeline_flush(pipeline_flush),
+		//.reg_nz(NZ),
 		.A(A));
 		
 //control unit
@@ -442,20 +446,21 @@ decode_unit decode_unit0(
 		
 //hazard unit
 hazard_unit hazard_unit0(
-		.clk(clk),
-		.NZT1(NZT1), .NZT2(NZT2),
+		//.clk(clk),
+		.NZT1(NZT1),// .NZT2(NZT2),
 		.JMP(JMP),
-		.XEC1(XEC1), .XEC2(XEC2),
+		.XEC1(XEC1),// .XEC2(XEC2),
 		.RET(RET),
-		.CALL2(CALL2),
-		.interrupt(interrupt),
-		.ALU_NZ(NZ),
+		//.CALL2(CALL2),
+		//.interrupt(interrupt),
+		//.ALU_NZ(NZ),
+		.take_branch(take_branch),
 		.alu_op1(alu_op1),
 		.HALT(HALT),
 		.RST(RST),
 		.regf_a_read(src_raddr),
 		.regf_w_reg1(dest_waddr1),
-		.regf_wren_reg1(regf_wren1), .regf_wren_reg2(regf_wren2),
+		.regf_wren_reg1(regf_wren1),
 		.SC_reg(SC), .SC_reg1(SC1), .SC_reg2(SC2), .SC_reg3(SC3), .SC_reg4(SC4), .SC_reg5(SC5),
 		.WC_reg1(WC1), .WC_reg2(WC2), .WC_reg3(WC3), .WC_reg4(WC4), .WC_reg5(WC5), .WC_reg6(WC6),
 		.RC_reg(RC),
@@ -470,7 +475,8 @@ hazard_unit hazard_unit0(
 		.d_cache_miss(d_cache_miss),
 		.hazard(hazard),
 		.data_hazard(data_hazard),
-		.branch_hazard(branch_hazard),
-		.pipeline_flush(pipeline_flush),
-		.decoder_RST(decoder_RST));
+		.branch_hazard(branch_hazard)
+		//.pipeline_flush(pipeline_flush),
+		//.decoder_RST(decoder_RST)
+	);
 endmodule

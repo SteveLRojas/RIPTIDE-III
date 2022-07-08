@@ -54,37 +54,6 @@ set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name SDC_FILE SDC1.sdc
-set_global_assignment -name VERILOG_FILE "CPU/RIPTIDE-III.v"
-set_global_assignment -name VERILOG_FILE VGA.v
-set_global_assignment -name SYSTEMVERILOG_FILE UART.sv
-set_global_assignment -name VERILOG_FILE toplevel.v
-set_global_assignment -name SYSTEMVERILOG_FILE timer.sv
-set_global_assignment -name VERILOG_FILE testbench.v
-set_global_assignment -name SYSTEMVERILOG_FILE serial.sv
-set_global_assignment -name VERILOG_FILE SDRAM_DP64_I.v
-set_global_assignment -name SYSTEMVERILOG_FILE sdr_parameters.sv
-set_global_assignment -name SYSTEMVERILOG_FILE sdr.sv
-set_global_assignment -name SYSTEMVERILOG_FILE ps2_host.sv
-set_global_assignment -name VERILOG_FILE p_cache.v
-set_global_assignment -name SYSTEMVERILOG_FILE MULTIPLEXED_HEX_DRIVER.sv
-set_global_assignment -name VERILOG_FILE MSC.v
-set_global_assignment -name SYSTEMVERILOG_FILE MC6847_gen3.sv
-set_global_assignment -name SYSTEMVERILOG_FILE keyboard.sv
-set_global_assignment -name VERILOG_FILE d_cache.v
-set_global_assignment -name VERILOG_FILE CPU/shift_merge.v
-set_global_assignment -name VERILOG_FILE CPU/right_rotate.v
-set_global_assignment -name VERILOG_FILE CPU/PC.v
-set_global_assignment -name VERILOG_FILE CPU/mask_unit.v
-set_global_assignment -name VERILOG_FILE CPU/internal_mem.v
-set_global_assignment -name VERILOG_FILE CPU/hazard_unit.v
-set_global_assignment -name VERILOG_FILE CPU/decode_unit.v
-set_global_assignment -name VERILOG_FILE CPU/ALU.v
-set_global_assignment -name QIP_FILE PLL0.qip
-set_global_assignment -name QIP_FILE VGA_RAM.qip
-set_global_assignment -name QIP_FILE CHR_ROM.qip
-set_global_assignment -name QIP_FILE p_mem.qip
-set_global_assignment -name QIP_FILE PRG_ROM.qip
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -210,5 +179,40 @@ set_global_assignment -name OPTIMIZATION_MODE "AGGRESSIVE PERFORMANCE"
 set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE SPEED
 set_global_assignment -name SYNTH_PROTECT_SDC_CONSTRAINT ON
 set_global_assignment -name PRE_MAPPING_RESYNTHESIS ON
+set_location_assignment PIN_99 -to i2c_scl
+set_location_assignment PIN_98 -to i2c_sda
+set_global_assignment -name SYSTEMVERILOG_FILE queue_8_8.sv
+set_global_assignment -name SYSTEMVERILOG_FILE button_debounce.sv
+set_global_assignment -name SYSTEMVERILOG_FILE I2C_ri.sv
+set_global_assignment -name SYSTEMVERILOG_FILE I2C_phy.sv
+set_global_assignment -name SDC_FILE SDC1.sdc
+set_global_assignment -name VERILOG_FILE "CPU/RIPTIDE-III.v"
+set_global_assignment -name VERILOG_FILE VGA.v
+set_global_assignment -name SYSTEMVERILOG_FILE UART.sv
+set_global_assignment -name VERILOG_FILE toplevel.v
+set_global_assignment -name SYSTEMVERILOG_FILE timer.sv
+set_global_assignment -name VERILOG_FILE testbench.v
+set_global_assignment -name SYSTEMVERILOG_FILE serial.sv
+set_global_assignment -name VERILOG_FILE SDRAM_DP64_I.v
+set_global_assignment -name SYSTEMVERILOG_FILE ps2_host.sv
+set_global_assignment -name VERILOG_FILE p_cache.v
+set_global_assignment -name SYSTEMVERILOG_FILE MULTIPLEXED_HEX_DRIVER.sv
+set_global_assignment -name VERILOG_FILE MSC.v
+set_global_assignment -name SYSTEMVERILOG_FILE MC6847_gen3.sv
+set_global_assignment -name SYSTEMVERILOG_FILE keyboard.sv
+set_global_assignment -name VERILOG_FILE d_cache.v
+set_global_assignment -name VERILOG_FILE CPU/shift_merge.v
+set_global_assignment -name VERILOG_FILE CPU/right_rotate.v
+set_global_assignment -name VERILOG_FILE CPU/PC.v
+set_global_assignment -name VERILOG_FILE CPU/mask_unit.v
+set_global_assignment -name VERILOG_FILE CPU/internal_mem.v
+set_global_assignment -name VERILOG_FILE CPU/hazard_unit.v
+set_global_assignment -name VERILOG_FILE CPU/decode_unit.v
+set_global_assignment -name VERILOG_FILE CPU/ALU.v
+set_global_assignment -name QIP_FILE PLL0.qip
+set_global_assignment -name QIP_FILE VGA_RAM.qip
+set_global_assignment -name QIP_FILE CHR_ROM.qip
+set_global_assignment -name QIP_FILE p_mem.qip
+set_global_assignment -name QIP_FILE PRG_ROM.qip
 set_global_assignment -name SYSTEMVERILOG_FILE interrupt_controller.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

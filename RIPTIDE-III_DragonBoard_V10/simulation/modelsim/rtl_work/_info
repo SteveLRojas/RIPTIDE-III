@@ -1,0 +1,886 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/simulation/modelsim
+vALU
+Z1 !s110 1657068240
+!i10b 1
+!s100 XS`FEBXb3oCzLNS1ADgST2
+IT5JKN6?h`RAHdM3i^4kle0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1633367546
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/ALU.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/ALU.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1657068240.000000
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/ALU.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU
+Z7 tCvgOpt 0
+n@a@l@u
+vbutton_debounce
+Z8 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1657069158
+!i10b 1
+!s100 c_Y`GfhNeNU0fYg[1<:L@1
+IUn^J>X9hRJbizPQX;;8Jm3
+R2
+!s105 button_debounce_sv_unit
+S1
+R0
+w1657069114
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/button_debounce.sv
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/button_debounce.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1657069158.000000
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/button_debounce.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/button_debounce.sv|
+!i113 1
+Z9 o-sv -work work
+Z10 !s92 -sv -work work +incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10
+R7
+vcall_stack
+R1
+!i10b 1
+!s100 4JTNc^`?Egko^Nn9`CKSH0
+I``1CQkR^>9M2VWm?YkLMX3
+R2
+R0
+Z11 w1631833502
+Z12 8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/internal_mem.v
+Z13 FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/internal_mem.v
+L0 88
+R3
+r1
+!s85 0
+31
+R4
+Z14 !s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/internal_mem.v|
+Z15 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/internal_mem.v|
+!i113 1
+R5
+R6
+R7
+vCHR_ROM
+Z16 !s110 1657068238
+!i10b 1
+!s100 U0dl9M=o1dMe=NU<c9nzj0
+IfaN?YYI:JR1el`i6:baIS0
+R2
+R0
+w1656278129
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CHR_ROM.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CHR_ROM.v
+Z17 L0 40
+R3
+r1
+!s85 0
+31
+Z18 !s108 1657068238.000000
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CHR_ROM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CHR_ROM.v|
+!i113 1
+R5
+Z19 !s92 -vlog01compat -work work +incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10
+R7
+n@c@h@r_@r@o@m
+vd_cache
+Z20 !s110 1657068239
+!i10b 1
+!s100 E`cmUAMRMdN[X<i^IhZQV1
+Ig?PJg1@CE[XH2lkzRBDeF1
+R2
+R0
+w1620354452
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/d_cache.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/d_cache.v
+L0 1
+R3
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/d_cache.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/d_cache.v|
+!i113 1
+R5
+R19
+R7
+vdecode_unit
+R1
+!i10b 1
+!s100 3hm2zzDjT58^SE8i^9Tjd3
+I7hkEg8HI:nF2NmcKL__m<2
+R2
+R0
+w1631587964
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/decode_unit.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/decode_unit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/decode_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/decode_unit.v|
+!i113 1
+R5
+R6
+R7
+vhazard_unit
+R1
+!i10b 1
+!s100 >]Hi86e0JJCV2gI0aSlc;2
+I;UJ>6jija3oC5oE`Z6YD51
+R2
+R0
+w1631571854
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/hazard_unit.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/hazard_unit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/hazard_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/hazard_unit.v|
+!i113 1
+R5
+R6
+R7
+vI2C_phy
+R8
+R20
+!i10b 1
+!s100 BT5XXd8AXd1AFSVh=A2?53
+I6DCo4oPlo7IYI[dje@B742
+R2
+!s105 I2C_phy_sv_unit
+S1
+R0
+w1656278849
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/I2C_phy.sv
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/I2C_phy.sv
+L0 1
+R3
+r1
+!s85 0
+31
+Z21 !s108 1657068239.000000
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/I2C_phy.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/I2C_phy.sv|
+!i113 1
+R9
+R10
+R7
+n@i2@c_phy
+vI2C_ri
+R8
+R20
+!i10b 1
+!s100 9HiMM2OQcBbN2LJc_Wn3X3
+IRjcMoLcJLc;b@72Jd_ONb1
+R2
+!s105 I2C_ri_sv_unit
+S1
+R0
+w1656278915
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/I2C_ri.sv
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/I2C_ri.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/I2C_ri.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/I2C_ri.sv|
+!i113 1
+R9
+R10
+R7
+n@i2@c_ri
+vinterrupt_controller
+R8
+R20
+!i10b 1
+!s100 XzZj93zOcoQjI`P^_QWI32
+I<aPO7RUg@4fSo5bMlhOFj2
+R2
+!s105 interrupt_controller_sv_unit
+S1
+R0
+w1656986767
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/interrupt_controller.sv
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/interrupt_controller.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/interrupt_controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/interrupt_controller.sv|
+!i113 1
+R9
+R10
+R7
+vkeyboard
+R8
+R20
+!i10b 1
+!s100 W?<Xc1=KJc[NWWC^MJHjc1
+IjC^dWL;b]oK:mmSIFzU@52
+R2
+!s105 keyboard_sv_unit
+S1
+R0
+w1631677856
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/keyboard.sv
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/keyboard.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/keyboard.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/keyboard.sv|
+!i113 1
+R9
+R10
+R7
+vmask_unit
+R1
+!i10b 1
+!s100 ejJ]lc:MVbf60ZABKGUK<2
+IYi26B`n=6lh7gA5Dki4>_2
+R2
+R0
+w1609716500
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/mask_unit.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/mask_unit.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/mask_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/mask_unit.v|
+!i113 1
+R5
+R6
+R7
+vMC6847_gen3
+R8
+R20
+!i10b 1
+!s100 ?>k4KiMj;e77[RTk?][f<2
+ITi3;P?;ZVCRbneN`TOb052
+R2
+!s105 MC6847_gen3_sv_unit
+S1
+R0
+w1656280607
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/MC6847_gen3.sv
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/MC6847_gen3.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/MC6847_gen3.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/MC6847_gen3.sv|
+!i113 1
+R9
+R10
+R7
+n@m@c6847_gen3
+vmemory_arbiter
+R8
+R20
+!i10b 1
+!s100 8k8aOH<G8Y<V?Xn32jg>61
+IN>F>mJK1ADo`glQWZ^l6Q1
+R2
+!s105 memory_arbiter_sv_unit
+S1
+R0
+w1656270549
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/memory_arbiter.sv
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/memory_arbiter.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/memory_arbiter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/memory_arbiter.sv|
+!i113 1
+R9
+R10
+R7
+vMSC
+R20
+!i10b 1
+!s100 OFQLl;BzN9eD:cI7H=]l42
+IAlV>48896>`61^ZgnhKLG0
+R2
+R0
+w1618100542
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/MSC.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/MSC.v
+L0 2
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/MSC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/MSC.v|
+!i113 1
+R5
+R19
+R7
+n@m@s@c
+vp_cache
+R20
+!i10b 1
+!s100 3nV8=U3eV9VZgd^iFKRmC0
+I^1N^>6anVB2_zYXzkO><g3
+R2
+R0
+w1617843456
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/p_cache.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/p_cache.v
+L0 1
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/p_cache.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/p_cache.v|
+!i113 1
+R5
+R19
+R7
+vp_mem
+R20
+!i10b 1
+!s100 M[2@n^HB1eSV[PXSVKZmP3
+Idd99GS4]@65H^MA8FBh:?1
+R2
+R0
+w1656908430
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/p_mem.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/p_mem.v
+R17
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/p_mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/p_mem.v|
+!i113 1
+R5
+R19
+R7
+vPC
+R1
+!i10b 1
+!s100 [U5fO6YI7EJcFn@7:XoQH2
+I5Bo;CX2O:4DchOb^[Tce]3
+R2
+R0
+w1656363615
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/PC.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/PC.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/PC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/PC.v|
+!i113 1
+R5
+R6
+R7
+n@p@c
+vPLL0
+R20
+!i10b 1
+!s100 N2hoi?Ef6=lOiYYJNa9L`0
+I9ZVh=@X[22b_1I8ZYeXz_2
+R2
+R0
+w1656908350
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/PLL0.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/PLL0.v
+R17
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/PLL0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/PLL0.v|
+!i113 1
+R5
+R19
+R7
+n@p@l@l0
+vPLL0_altpll
+R16
+!i10b 1
+!s100 BDgPkdFn;M1TO@;Q<JJF81
+IZ?N4IMKch6`z>Q[PYVOPb3
+R2
+R0
+w1656910515
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/db/pll0_altpll.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/db/pll0_altpll.v
+L0 30
+R3
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/db/pll0_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/db|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/db/pll0_altpll.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/db
+R7
+n@p@l@l0_altpll
+vPRG_ROM
+R20
+!i10b 1
+!s100 UYES7cS=d1bJ92_zY:maE1
+IL1<n<=YKa7QoV]edhT72A3
+R2
+R0
+w1656908381
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/PRG_ROM.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/PRG_ROM.v
+R17
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/PRG_ROM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/PRG_ROM.v|
+!i113 1
+R5
+R19
+R7
+n@p@r@g_@r@o@m
+vps2_host
+R8
+R20
+!i10b 1
+!s100 1c9b;>MY]K_a9@3?<WWOD1
+IDRPXVPieQSJi@46UOUGLQ0
+R2
+!s105 ps2_host_sv_unit
+S1
+R0
+w1656990540
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/ps2_host.sv
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/ps2_host.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/ps2_host.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/ps2_host.sv|
+!i113 1
+R9
+R10
+R7
+vqueue_8_8
+R8
+R20
+!i10b 1
+!s100 SWGfKb_LKD4_Wa5LW:48Q3
+I6XUliLz@Qa]OOG34DjzV03
+R2
+!s105 queue_8_8_sv_unit
+S1
+R0
+w1656278267
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/queue_8_8.sv
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/queue_8_8.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/queue_8_8.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/queue_8_8.sv|
+!i113 1
+R9
+R10
+R7
+vR3_PVP
+R1
+!i10b 1
+!s100 iGoK0iR1P7=khZZ297:h;2
+IU9701^jQH8dzDWAJ:?G=Q0
+R2
+R0
+w1657068019
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/toplevel.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/toplevel.v
+L0 31
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/toplevel.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/toplevel.v|
+!i113 1
+R5
+R19
+R7
+n@r3_@p@v@p
+vreg_file
+R1
+!i10b 1
+!s100 4CKG<V4WP[5QJQ8LgRW?;2
+I3PG1RhZ;PLQn@L8QVgglE2
+R2
+R0
+R11
+R12
+R13
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R14
+R15
+!i113 1
+R5
+R6
+R7
+vright_rotate
+R1
+!i10b 1
+!s100 ]h5?^lG9bNV1Pk`ZXQcag1
+Ig`kZg;o4L`;[_kcaOXALB3
+R2
+R0
+w1631240372
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/right_rotate.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/right_rotate.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/right_rotate.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/right_rotate.v|
+!i113 1
+R5
+R6
+R7
+vRIPTIDE_III
+R1
+!i10b 1
+!s100 @27edGRKgn0beWcI6bBzJ2
+IP@zNAVniJ]oX_3T5j6ITd2
+R2
+R0
+w1631759836
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/RIPTIDE-III.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/RIPTIDE-III.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/RIPTIDE-III.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/RIPTIDE-III.v|
+!i113 1
+R5
+R6
+R7
+n@r@i@p@t@i@d@e_@i@i@i
+vsdr
+R8
+R20
+!i10b 1
+!s100 ?k@ZH`cC5`_318koH2aQg3
+I?62EY:B6Lh92]YoP77@8Q2
+R2
+!s105 sdr_sv_unit
+S1
+R0
+Z22 w1656379119
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/sdr.sv
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/sdr.sv
+Z23 FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/sdr_parameters.sv
+L0 48
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/sdr_parameters.sv|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/sdr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/sdr.sv|
+!i113 1
+R9
+R10
+R7
+Xsdr_parameters_sv_unit
+R8
+R20
+!i10b 1
+!s100 dDOQ3[P=CDB8H;Z<2ZO=n2
+IFi^jBddjLaIY=5N62HS;S1
+VFi^jBddjLaIY=5N62HS;S1
+!i103 1
+S1
+R0
+R22
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/sdr_parameters.sv
+R23
+L0 101
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/sdr_parameters.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/sdr_parameters.sv|
+!i113 1
+R9
+R10
+R7
+vSDRAM8_SP8_B8_I
+R8
+R20
+!i10b 1
+!s100 6j8LnHf?c_PgK=IXQcQ7F3
+I1n;TBihJQY0Ed]gkK]T2e3
+R2
+!s105 SDRAM_SP8_B8_I_sv_unit
+S1
+R0
+w1656391531
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/SDRAM_SP8_B8_I.sv
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/SDRAM_SP8_B8_I.sv
+L0 41
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/SDRAM_SP8_B8_I.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/SDRAM_SP8_B8_I.sv|
+!i113 1
+R9
+R10
+R7
+n@s@d@r@a@m8_@s@p8_@b8_@i
+vserial
+R8
+R20
+!i10b 1
+!s100 m[P8I]j70nbbQi]B_YYW@1
+Imkib9hi^fQzXgzPMnLN;X0
+R2
+!s105 serial_sv_unit
+S1
+R0
+w1656270438
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/serial.sv
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/serial.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/serial.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/serial.sv|
+!i113 1
+R9
+R10
+R7
+vshift_merge
+R1
+!i10b 1
+!s100 o2obKT1^hIA0BE;]7=W;z2
+IhmGia>91lUHa;jK0WX_6h3
+R2
+R0
+w1631240348
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/shift_merge.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/shift_merge.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/shift_merge.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/CPU/shift_merge.v|
+!i113 1
+R5
+R6
+R7
+vtestbench
+!s110 1657069524
+!i10b 1
+!s100 Qi5oZXj3m9@OWciSURlhc1
+INYagmiNz^AU^LdYYhY[nC0
+R2
+R0
+w1657069516
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/testbench.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/testbench.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1657069524.000000
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/testbench.v|
+!i113 1
+R5
+R19
+R7
+vtimer
+R8
+R20
+!i10b 1
+!s100 =X2b343:FJAVSlGnXKR<i3
+ISgan0^<FfCzZn:F2@]PlI2
+R2
+!s105 timer_sv_unit
+S1
+R0
+w1631677716
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/timer.sv
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/timer.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/timer.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/timer.sv|
+!i113 1
+R9
+R10
+R7
+vUART
+R8
+R1
+!i10b 1
+!s100 GP7koUe[I]V`HkBBzBaYY3
+I<V;QK4eRK>bH4S59o3CKJ2
+R2
+!s105 UART_sv_unit
+S1
+R0
+w1626646650
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/UART.sv
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/UART.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/UART.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/UART.sv|
+!i113 1
+R9
+R10
+R7
+n@u@a@r@t
+vVGA
+R1
+!i10b 1
+!s100 EV[oCZfafm=5<=X8z?1;:3
+ID]1?XzO3HUDVUl?0LRT_80
+R2
+R0
+w1656280672
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/VGA.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/VGA.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/VGA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/VGA.v|
+!i113 1
+R5
+R19
+R7
+n@v@g@a
+vVGA_RAM
+R20
+!i10b 1
+!s100 clVLYMJMY@]KQ3;D2VV4K0
+IXQSQR;zM<VSWXPbkTUE7c0
+R2
+R0
+w1656908459
+8C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/VGA_RAM.v
+FC:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/VGA_RAM.v
+R17
+R3
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/VGA_RAM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10|C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V10/VGA_RAM.v|
+!i113 1
+R5
+R19
+R7
+n@v@g@a_@r@a@m

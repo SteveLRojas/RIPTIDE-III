@@ -117,7 +117,7 @@ set_location_assignment PIN_51 -to sdram_dqm
 set_location_assignment PIN_67 -to sdram_ras_n
 set_location_assignment PIN_65 -to sdram_wre_n
 set_global_assignment -name ENABLE_OCT_DONE OFF
-set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
 set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
 set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
@@ -126,6 +126,18 @@ set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
 set_global_assignment -name NUM_PARALLEL_PROCESSORS 16
+set_location_assignment PIN_77 -to jp_clk_q[0]
+set_location_assignment PIN_83 -to jp_clk_q[1]
+set_location_assignment PIN_74 -to jp_data_d[1]
+set_location_assignment PIN_75 -to jp_data_d[0]
+set_location_assignment PIN_80 -to jp_latch_q[1]
+set_location_assignment PIN_76 -to jp_latch_q[0]
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name CYCLONEIII_CONFIGURATION_DEVICE EPCS16
+set_global_assignment -name SYSTEMVERILOG_FILE nes_joypad.sv
+set_global_assignment -name SYSTEMVERILOG_FILE button_debounce.sv
 set_global_assignment -name SDC_FILE SDC1.sdc
 set_global_assignment -name VERILOG_FILE VGA.v
 set_global_assignment -name VERILOG_FILE toplevel.v

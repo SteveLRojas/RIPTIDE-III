@@ -152,10 +152,10 @@ sdram_a[2]                   : 80        : output : 3.3-V LVTTL       :         
 VCCIO5                       : 81        : power  :                   : 3.3V    : 5         :                
 GND                          : 82        : gnd    :                   :         :           :                
 sdram_a[3]                   : 83        : output : 3.3-V LVTTL       :         : 5         : Y              
-RESERVED_INPUT_WITH_WEAK_PULLUP : 84        :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 85        :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 86        :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 87        :        :                   :         : 5         :                
+jp_data_d[1]                 : 84        : input  : 3.3-V LVTTL       :         : 5         : Y              
+jp_data_d[0]                 : 85        : input  : 3.3-V LVTTL       :         : 5         : Y              
+jp_latch_q[0]                : 86        : output : 3.3-V LVTTL       :         : 5         : Y              
+jp_clk_q[0]                  : 87        : output : 3.3-V LVTTL       :         : 5         : Y              
 GND+                         : 88        :        :                   :         : 5         :                
 GND+                         : 89        :        :                   :         : 5         :                
 GND+                         : 90        :        :                   :         : 6         :                
@@ -166,8 +166,8 @@ MSEL0                        : 94        :        :                   :         
 GND                          : 95        : gnd    :                   :         :           :                
 MSEL1                        : 96        :        :                   :         : 6         :                
 MSEL2                        : 97        :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 98        :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 99        :        :                   :         : 6         :                
+jp_latch_q[1]                : 98        : output : 3.3-V LVTTL       :         : 6         : Y              
+jp_clk_q[1]                  : 99        : output : 3.3-V LVTTL       :         : 6         : Y              
 HSYNC                        : 100       : output : 3.3-V LVTTL       :         : 6         : Y              
 VSYNC                        : 101       : output : 3.3-V LVTTL       :         : 6         : Y              
 VCCINT                       : 102       : power  :                   : 1.2V    :           :                

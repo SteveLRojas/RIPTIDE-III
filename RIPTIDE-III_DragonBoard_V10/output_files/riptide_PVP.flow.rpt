@@ -1,5 +1,5 @@
 Flow report for riptide_PVP
-Thu Jul 07 16:51:14 2022
+Sat Jul 23 21:34:45 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Jul 07 16:51:14 2022       ;
+; Flow Status                        ; Successful - Sat Jul 23 21:34:45 2022       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; riptide_PVP                                 ;
 ; Top-level Entity Name              ; R3_PVP                                      ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 3,126 / 6,272 ( 50 % )                      ;
-;     Total combinational functions  ; 2,549 / 6,272 ( 41 % )                      ;
-;     Dedicated logic registers      ; 2,140 / 6,272 ( 34 % )                      ;
-; Total registers                    ; 2140                                        ;
-; Total pins                         ; 53 / 92 ( 58 % )                            ;
+; Total logic elements               ; 3,337 / 6,272 ( 53 % )                      ;
+;     Total combinational functions  ; 2,770 / 6,272 ( 44 % )                      ;
+;     Dedicated logic registers      ; 2,190 / 6,272 ( 35 % )                      ;
+; Total registers                    ; 2198                                        ;
+; Total pins                         ; 59 / 92 ( 64 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 177,152 / 276,480 ( 64 % )                  ;
 ; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/07/2022 16:50:44 ;
+; Start date & time ; 07/23/2022 21:34:02 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; riptide_PVP         ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 233497588670758.165723424413344        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 233497588670758.165863364113268        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testbench                         ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -132,11 +132,14 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_TEST_BENCH_NAME                  ; testbench                              ; --            ; --          ; eda_simulation                    ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 100 us                                 ; --            ; --          ; testbench                         ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
+; FITTER_EFFORT                        ; Standard Fit                           ; Auto Fit      ; --          ; --                                ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                                ;
 ; MISC_FILE                            ; PLL0.ppf                               ; --            ; --          ; --                                ;
+; MUX_RESTRUCTURE                      ; Off                                    ; Auto          ; --          ; --                                ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                   ; --            ; --          ; --                                ;
 ; NUM_PARALLEL_PROCESSORS              ; 16                                     ; --            ; --          ; --                                ;
+; OPTIMIZATION_MODE                    ; Aggressive Performance                 ; Balanced      ; --          ; --                                ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                      ; --            ; --          ; --                                ;
 ; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                      ; --            ; --          ; --                                ;
 ; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                             ; --            ; --          ; --                                ;
@@ -144,9 +147,13 @@ https://fpgasoftware.intel.com/eula.
 ; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; R3_PVP      ; Top                               ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; R3_PVP      ; Top                               ;
 ; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; R3_PVP      ; Top                               ;
+; PHYSICAL_SYNTHESIS_COMBO_LOGIC       ; On                                     ; Off           ; --          ; --                                ;
+; PHYSICAL_SYNTHESIS_REGISTER_RETIMING ; On                                     ; Off           ; --          ; --                                ;
+; PLACEMENT_EFFORT_MULTIPLIER          ; 4.0                                    ; 1.0           ; --          ; --                                ;
 ; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
 ; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                                ;
+; ROUTER_TIMING_OPTIMIZATION_LEVEL     ; MAXIMUM                                ; Normal        ; --          ; --                                ;
 ; TOP_LEVEL_ENTITY                     ; R3_PVP                                 ; riptide_PVP   ; --          ; --                                ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
@@ -156,12 +163,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4887 MB             ; 00:00:21                           ;
-; Fitter               ; 00:00:10     ; 1.5                     ; 6545 MB             ; 00:00:19                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4692 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.7                     ; 4946 MB             ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4657 MB             ; 00:00:01                           ;
-; Total                ; 00:00:26     ; --                      ; --                  ; 00:00:46                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4930 MB             ; 00:00:22                           ;
+; Fitter               ; 00:00:22     ; 1.4                     ; 6547 MB             ; 00:00:55                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4695 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.7                     ; 4952 MB             ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4655 MB             ; 00:00:01                           ;
+; Total                ; 00:00:40     ; --                      ; --                  ; 00:01:23                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

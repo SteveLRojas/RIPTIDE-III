@@ -247,4 +247,8 @@ Fixed bug in ps2_host module (tx_shift_reg needs to be set during reset).
 Made changes to interrupt controller:
 	Interrupt 0 no longer acts as a global interrupt enable.
 	Added timmer to delay interrupts if they happen too soon after the status register is written.
+Created nes_joypad module.
+
+Revision 13:
+
 	

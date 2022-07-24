@@ -1,0 +1,6 @@
+8XASM creates only 16-bit mif files, but since the RIPTIDE-III DragonBoard project has an 8-bit memory system we will need an 8-bit mif file.
+To create said mif file first use 8XASM to create a raw binary file like so:
+	8xasm riptide3_snake.asm -bin riptide3_snake.bin
+Then use bin_to_mif_coe to convert the binary file into an 8-bit mif file like so:
+	bin_to_mif_coe riptide3_snake.bin r3_rom_8_bit 1
+You can then use this file in Quartus to initialize the platform ROM.

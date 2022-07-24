@@ -11,6 +11,9 @@ create_generated_clock -source PLL_inst|altpll_component|auto_generated|pll1|clk
 set_false_path -from * -to [get_ports {LED* TXD ps2_clk_q ps2_data_q R* G* B* HSYNC VSYNC i2c_sda i2c_scl}]
 set_false_path -from [get_ports {reset button* RXD ps2_clk_d ps2_data_d i2c_sda}] -to *
 
+set_false_path -from * -to [get_ports {jp_clk_q* jp_latch_q*}]
+set_false_path -from [get_ports {jp_data_d*}] -to *
+
 # board delay + Tco(max) of external devices (memory)
 #set_input_delay -clock PLL_inst|altpll_component|auto_generated|pll1|clk[2] -max 6.0 [get_ports {sdram_dq[*]}]
 set_input_delay -clock mem_clk -max 7.0 [get_ports {sdram_dq[*]}]

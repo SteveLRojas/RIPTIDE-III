@@ -1,5 +1,5 @@
 Analysis & Synthesis report for R3_PVP
-Sat Jul 09 09:02:41 2022
+Sat Jul 23 21:55:58 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -72,16 +72,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jul 09 09:02:41 2022       ;
+; Analysis & Synthesis Status        ; Successful - Sat Jul 23 21:55:57 2022       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; R3_PVP                                      ;
 ; Top-level Entity Name              ; R3_PVP                                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 3,727                                       ;
-;     Total combinational functions  ; 2,549                                       ;
-;     Dedicated logic registers      ; 2,148                                       ;
-; Total registers                    ; 2148                                        ;
-; Total pins                         ; 53                                          ;
+; Total logic elements               ; 3,799                                       ;
+;     Total combinational functions  ; 2,586                                       ;
+;     Dedicated logic registers      ; 2,206                                       ;
+; Total registers                    ; 2206                                        ;
+; Total pins                         ; 59                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 177,152                                     ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -205,6 +205,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                 ; Library ;
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
+; nes_joypad.sv                    ; yes             ; User SystemVerilog HDL File            ; C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/nes_joypad.sv           ;         ;
+; button_debounce.sv               ; yes             ; User SystemVerilog HDL File            ; C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/button_debounce.sv      ;         ;
 ; VGA.v                            ; yes             ; User Verilog HDL File                  ; C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/VGA.v                   ;         ;
 ; toplevel.v                       ; yes             ; User Verilog HDL File                  ; C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v              ;         ;
 ; p_cache.v                        ; yes             ; User Verilog HDL File                  ; C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/p_cache.v               ;         ;
@@ -242,7 +244,6 @@ https://fpgasoftware.intel.com/eula.
 ; stratixii_pll.inc                ; yes             ; Megafunction                           ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/stratixii_pll.inc     ;         ;
 ; cycloneii_pll.inc                ; yes             ; Megafunction                           ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/cycloneii_pll.inc     ;         ;
 ; db/pll0_altpll.v                 ; yes             ; Auto-Generated Megafunction            ; C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/db/pll0_altpll.v        ;         ;
-; button_debounce.sv               ; yes             ; Auto-Found SystemVerilog HDL File      ; C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/button_debounce.sv      ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -265,23 +266,23 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                             ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 3,727                                                                             ;
+; Estimated Total logic elements              ; 3,799                                                                             ;
 ;                                             ;                                                                                   ;
-; Total combinational functions               ; 2549                                                                              ;
+; Total combinational functions               ; 2586                                                                              ;
 ; Logic element usage by number of LUT inputs ;                                                                                   ;
-;     -- 4 input functions                    ; 1503                                                                              ;
-;     -- 3 input functions                    ; 617                                                                               ;
-;     -- <=2 input functions                  ; 429                                                                               ;
+;     -- 4 input functions                    ; 1511                                                                              ;
+;     -- 3 input functions                    ; 628                                                                               ;
+;     -- <=2 input functions                  ; 447                                                                               ;
 ;                                             ;                                                                                   ;
 ; Logic elements by mode                      ;                                                                                   ;
-;     -- normal mode                          ; 2319                                                                              ;
-;     -- arithmetic mode                      ; 230                                                                               ;
+;     -- normal mode                          ; 2348                                                                              ;
+;     -- arithmetic mode                      ; 238                                                                               ;
 ;                                             ;                                                                                   ;
-; Total registers                             ; 2148                                                                              ;
-;     -- Dedicated logic registers            ; 2148                                                                              ;
+; Total registers                             ; 2206                                                                              ;
+;     -- Dedicated logic registers            ; 2206                                                                              ;
 ;     -- I/O registers                        ; 0                                                                                 ;
 ;                                             ;                                                                                   ;
-; I/O pins                                    ; 53                                                                                ;
+; I/O pins                                    ; 59                                                                                ;
 ; Total memory bits                           ; 177152                                                                            ;
 ;                                             ;                                                                                   ;
 ; Embedded Multiplier 9-bit elements          ; 0                                                                                 ;
@@ -290,9 +291,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1                                                                                 ;
 ;                                             ;                                                                                   ;
 ; Maximum fan-out node                        ; PLL0:PLL_inst|altpll:altpll_component|PLL0_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 2312                                                                              ;
-; Total fan-out                               ; 17985                                                                             ;
-; Average fan-out                             ; 3.61                                                                              ;
+; Maximum fan-out                             ; 2313                                                                              ;
+; Total fan-out                               ; 18305                                                                             ;
+; Average fan-out                             ; 3.60                                                                              ;
 +---------------------------------------------+-----------------------------------------------------------------------------------+
 
 
@@ -301,7 +302,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                  ; Entity Name          ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |R3_PVP                                         ; 2549 (72)           ; 2148 (32)                 ; 177152      ; 0            ; 0       ; 0         ; 53   ; 0            ; |R3_PVP                                                                                                              ; R3_PVP               ; work         ;
+; |R3_PVP                                         ; 2586 (80)           ; 2206 (33)                 ; 177152      ; 0            ; 0       ; 0         ; 59   ; 0            ; |R3_PVP                                                                                                              ; R3_PVP               ; work         ;
 ;    |I2C_ri:i2c_ri_inst|                         ; 69 (17)             ; 60 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|I2C_ri:i2c_ri_inst                                                                                           ; I2C_ri               ; work         ;
 ;       |I2C_phy:i2c_phy_inst|                    ; 52 (52)             ; 38 (38)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|I2C_ri:i2c_ri_inst|I2C_phy:i2c_phy_inst                                                                      ; I2C_phy              ; work         ;
 ;    |MSC:MSC_inst|                               ; 20 (20)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|MSC:MSC_inst                                                                                                 ; MSC                  ; work         ;
@@ -311,19 +312,19 @@ https://fpgasoftware.intel.com/eula.
 ;    |PRG_ROM:PRG_inst|                           ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|PRG_ROM:PRG_inst                                                                                             ; PRG_ROM              ; work         ;
 ;       |altsyncram:altsyncram_component|         ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|PRG_ROM:PRG_inst|altsyncram:altsyncram_component                                                             ; altsyncram           ; work         ;
 ;          |altsyncram_vha1:auto_generated|       ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|PRG_ROM:PRG_inst|altsyncram:altsyncram_component|altsyncram_vha1:auto_generated                              ; altsyncram_vha1      ; work         ;
-;    |RIPTIDE_III:CPU_inst|                       ; 1029 (139)          ; 924 (165)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst                                                                                         ; RIPTIDE_III          ; work         ;
-;       |ALU:ALU0|                                ; 48 (48)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|ALU:ALU0                                                                                ; ALU                  ; work         ;
-;       |PC:PC0|                                  ; 443 (243)           ; 458 (165)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0                                                                                  ; PC                   ; work         ;
+;    |RIPTIDE_III:CPU_inst|                       ; 1027 (139)          ; 924 (165)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst                                                                                         ; RIPTIDE_III          ; work         ;
+;       |ALU:ALU0|                                ; 46 (46)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|ALU:ALU0                                                                                ; ALU                  ; work         ;
+;       |PC:PC0|                                  ; 445 (245)           ; 458 (165)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0                                                                                  ; PC                   ; work         ;
 ;          |call_stack:cstack0|                   ; 200 (200)           ; 293 (293)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|call_stack:cstack0                                                               ; call_stack           ; work         ;
-;       |decode_unit:decode_unit0|                ; 100 (100)           ; 85 (85)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0                                                                ; decode_unit          ; work         ;
+;       |decode_unit:decode_unit0|                ; 98 (98)             ; 85 (85)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0                                                                ; decode_unit          ; work         ;
 ;       |hazard_unit:hazard_unit0|                ; 21 (21)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|hazard_unit:hazard_unit0                                                                ; hazard_unit          ; work         ;
 ;       |mask_unit:mask0|                         ; 7 (7)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|mask_unit:mask0                                                                         ; mask_unit            ; work         ;
 ;       |reg_file:reg_file0|                      ; 129 (129)           ; 144 (144)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|reg_file:reg_file0                                                                      ; reg_file             ; work         ;
 ;       |right_rotate:right_rotate0|              ; 26 (26)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|right_rotate:right_rotate0                                                              ; right_rotate         ; work         ;
 ;       |right_rotate:right_rotate1|              ; 16 (16)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|right_rotate:right_rotate1                                                              ; right_rotate         ; work         ;
 ;       |shift_merge:shift_merge0|                ; 100 (100)           ; 39 (39)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|RIPTIDE_III:CPU_inst|shift_merge:shift_merge0                                                                ; shift_merge          ; work         ;
-;    |SDRAM8_SP8_B8_I:SDRAM_controller|           ; 237 (182)           ; 197 (125)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller                                                                             ; SDRAM8_SP8_B8_I      ; work         ;
-;       |queue_8_8:init_fifo_inst|                ; 55 (55)             ; 72 (72)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|queue_8_8:init_fifo_inst                                                    ; queue_8_8            ; work         ;
+;    |SDRAM8_SP8_B8_I:SDRAM_controller|           ; 237 (188)           ; 197 (129)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller                                                                             ; SDRAM8_SP8_B8_I      ; work         ;
+;       |queue_8_8:init_fifo_inst|                ; 49 (49)             ; 68 (68)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|queue_8_8:init_fifo_inst                                                    ; queue_8_8            ; work         ;
 ;    |VGA:VGA_inst|                               ; 117 (1)             ; 91 (1)                    ; 40960       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|VGA:VGA_inst                                                                                                 ; VGA                  ; work         ;
 ;       |MC6847_gen3:VDG|                         ; 116 (116)           ; 90 (90)                   ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG                                                                                 ; MC6847_gen3          ; work         ;
 ;          |CHR_ROM:CHR_inst|                     ; 0 (0)               ; 0 (0)                     ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|CHR_ROM:CHR_inst                                                                ; CHR_ROM              ; work         ;
@@ -343,6 +344,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |queue_8_8:rx_queue|                      ; 58 (58)             ; 72 (72)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|keyboard:keyboard_inst|queue_8_8:rx_queue                                                                    ; queue_8_8            ; work         ;
 ;       |queue_8_8:tx_queue|                      ; 64 (64)             ; 72 (72)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|keyboard:keyboard_inst|queue_8_8:tx_queue                                                                    ; queue_8_8            ; work         ;
 ;    |memory_arbiter:arbiter_inst|                ; 103 (103)           ; 231 (231)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|memory_arbiter:arbiter_inst                                                                                  ; memory_arbiter       ; work         ;
+;    |nes_joypad:nes_joypad_inst|                 ; 31 (31)             ; 57 (57)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|nes_joypad:nes_joypad_inst                                                                                   ; nes_joypad           ; work         ;
 ;    |p_cache:p_cache_inst|                       ; 69 (69)             ; 24 (24)                   ; 35328       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|p_cache:p_cache_inst                                                                                         ; p_cache              ; work         ;
 ;       |p_mem:p_mem_inst|                        ; 0 (0)               ; 0 (0)                     ; 35328       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|p_cache:p_cache_inst|p_mem:p_mem_inst                                                                        ; p_mem                ; work         ;
 ;          |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 35328       ; 0            ; 0       ; 0         ; 0    ; 0            ; |R3_PVP|p_cache:p_cache_inst|p_mem:p_mem_inst|altsyncram:altsyncram_component                                        ; altsyncram           ; work         ;
@@ -436,114 +438,114 @@ Encoding Type:  One-Hot
 +---------------------+--------------------+---------------------+--------------------+--------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                     ;
-+------------------------------------------------------------------+-------------------------------------------------------------------------------------+
-; Register name                                                    ; Reason for Removal                                                                  ;
-+------------------------------------------------------------------+-------------------------------------------------------------------------------------+
-; RIPTIDE_III:CPU_inst|shift_merge:shift_merge0|merge_mask[0]      ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[7][7]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[7][6]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[7][5]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[7][4]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[7][3]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[7][2]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[7][1]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[7][0]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[6][7]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[6][6]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[6][5]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[6][4]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[6][3]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[6][2]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[6][1]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[6][0]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[5][7]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[5][6]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[5][5]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[5][4]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[5][3]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[5][2]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[5][1]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[5][0]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[4][7]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[4][6]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[4][5]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[4][4]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[4][3]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[4][2]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[4][1]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[4][0]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[3][7]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[3][6]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[3][5]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[3][4]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[3][3]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[3][2]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[3][1]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[3][0]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[2][7]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[2][6]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[2][5]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[2][4]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[2][3]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[2][2]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[2][1]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[2][0]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[1][7]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[1][6]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[1][5]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[1][4]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[1][3]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[1][2]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[1][1]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[1][0]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[0][7]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[0][6]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[0][5]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[0][4]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[0][3]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[0][2]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[0][1]                   ; Stuck at GND due to stuck port data_in                                              ;
-; memory_arbiter:arbiter_inst|port1_to_mem[0][0]                   ; Stuck at GND due to stuck port data_in                                              ;
-; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|WC_reg             ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|latch_wren_reg            ;
-; RIPTIDE_III:CPU_inst|reg_file:reg_file0|prev_w_data[0]           ; Merged with RIPTIDE_III:CPU_inst|shift_merge:shift_merge0|shift_reg[0]              ;
-; memory_arbiter:arbiter_inst|prev_p2_req                          ; Merged with MSC:MSC_inst|prev_p2_req                                                ;
-; memory_arbiter:arbiter_inst|prev_p1_req                          ; Merged with MSC:MSC_inst|prev_p1_req                                                ;
-; SDRAM8_SP8_B8_I:SDRAM_controller|address_hold[1,2]               ; Merged with SDRAM8_SP8_B8_I:SDRAM_controller|address_hold[0]                        ;
-; VGA:VGA_inst|MC6847_gen3:VDG|INV_s                               ; Merged with VGA:VGA_inst|MC6847_gen3:VDG|DD_s[6]                                    ;
-; VGA:VGA_inst|MC6847_gen3:VDG|SA_s                                ; Merged with VGA:VGA_inst|MC6847_gen3:VDG|DD_s[7]                                    ;
-; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|n_LB_r_reg         ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[11]        ;
-; RIPTIDE_III:CPU_inst|latch_wren1                                 ; Merged with RIPTIDE_III:CPU_inst|WC1                                                ;
-; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|n_LB_w_reg         ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|latch_address_w_reg       ;
-; RIPTIDE_III:CPU_inst|latch_wren4                                 ; Merged with RIPTIDE_III:CPU_inst|WC4                                                ;
-; RIPTIDE_III:CPU_inst|latch_wren3                                 ; Merged with RIPTIDE_III:CPU_inst|WC3                                                ;
-; RIPTIDE_III:CPU_inst|latch_wren2                                 ; Merged with RIPTIDE_III:CPU_inst|WC2                                                ;
-; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|alu_I_field_reg[2] ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[2]         ;
-; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|alu_I_field_reg[3] ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[3]         ;
-; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|alu_I_field_reg[4] ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[4]         ;
-; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|rotate_S0_reg[0]   ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[8]         ;
-; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|rotate_S0_reg[1]   ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[9]         ;
-; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|rotate_S0_reg[2]   ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[10]        ;
-; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|alu_I_field_reg[1] ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[1]         ;
-; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|alu_I_field_reg[0] ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[0]         ;
-; SDRAM8_SP8_B8_I:SDRAM_controller|address_hold[0]                 ; Stuck at GND due to stuck port data_in                                              ;
-; SDRAM8_SP8_B8_I:SDRAM_controller|state~32                        ; Lost fanout                                                                         ;
-; SDRAM8_SP8_B8_I:SDRAM_controller|state~33                        ; Lost fanout                                                                         ;
-; SDRAM8_SP8_B8_I:SDRAM_controller|state~34                        ; Lost fanout                                                                         ;
-; SDRAM8_SP8_B8_I:SDRAM_controller|state~35                        ; Lost fanout                                                                         ;
-; SDRAM8_SP8_B8_I:SDRAM_controller|state~36                        ; Lost fanout                                                                         ;
-; SDRAM8_SP8_B8_I:SDRAM_controller|state~37                        ; Lost fanout                                                                         ;
-; memory_arbiter:arbiter_inst|state~9                              ; Lost fanout                                                                         ;
-; memory_arbiter:arbiter_inst|state~10                             ; Lost fanout                                                                         ;
-; memory_arbiter:arbiter_inst|state~12                             ; Lost fanout                                                                         ;
-; memory_arbiter:arbiter_inst|state.S_PORT1_WRITE                  ; Stuck at GND due to stuck port data_in                                              ;
-; SDRAM8_SP8_B8_I:SDRAM_controller|init_address[0]                 ; Merged with SDRAM8_SP8_B8_I:SDRAM_controller|queue_8_8:init_fifo_inst|write_addr[0] ;
-; SDRAM8_SP8_B8_I:SDRAM_controller|init_address[1]                 ; Merged with SDRAM8_SP8_B8_I:SDRAM_controller|queue_8_8:init_fifo_inst|write_addr[1] ;
-; SDRAM8_SP8_B8_I:SDRAM_controller|init_address[2]                 ; Merged with SDRAM8_SP8_B8_I:SDRAM_controller|queue_8_8:init_fifo_inst|write_addr[2] ;
-; SDRAM8_SP8_B8_I:SDRAM_controller|init_address[3]                 ; Merged with SDRAM8_SP8_B8_I:SDRAM_controller|queue_8_8:init_fifo_inst|write_addr[3] ;
-; Total Number of Removed Registers = 102                          ;                                                                                     ;
-+------------------------------------------------------------------+-------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                      ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------------+
+; Register name                                                           ; Reason for Removal                                                            ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------------+
+; RIPTIDE_III:CPU_inst|shift_merge:shift_merge0|merge_mask[0]             ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[7][7]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[7][6]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[7][5]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[7][4]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[7][3]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[7][2]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[7][1]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[7][0]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[6][7]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[6][6]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[6][5]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[6][4]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[6][3]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[6][2]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[6][1]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[6][0]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[5][7]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[5][6]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[5][5]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[5][4]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[5][3]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[5][2]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[5][1]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[5][0]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[4][7]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[4][6]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[4][5]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[4][4]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[4][3]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[4][2]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[4][1]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[4][0]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[3][7]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[3][6]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[3][5]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[3][4]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[3][3]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[3][2]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[3][1]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[3][0]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[2][7]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[2][6]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[2][5]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[2][4]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[2][3]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[2][2]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[2][1]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[2][0]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[1][7]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[1][6]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[1][5]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[1][4]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[1][3]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[1][2]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[1][1]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[1][0]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[0][7]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[0][6]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[0][5]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[0][4]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[0][3]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[0][2]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[0][1]                          ; Stuck at GND due to stuck port data_in                                        ;
+; memory_arbiter:arbiter_inst|port1_to_mem[0][0]                          ; Stuck at GND due to stuck port data_in                                        ;
+; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|WC_reg                    ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|latch_wren_reg      ;
+; RIPTIDE_III:CPU_inst|reg_file:reg_file0|prev_w_data[0]                  ; Merged with RIPTIDE_III:CPU_inst|shift_merge:shift_merge0|shift_reg[0]        ;
+; memory_arbiter:arbiter_inst|prev_p2_req                                 ; Merged with MSC:MSC_inst|prev_p2_req                                          ;
+; memory_arbiter:arbiter_inst|prev_p1_req                                 ; Merged with MSC:MSC_inst|prev_p1_req                                          ;
+; SDRAM8_SP8_B8_I:SDRAM_controller|address_hold[1,2]                      ; Merged with SDRAM8_SP8_B8_I:SDRAM_controller|address_hold[0]                  ;
+; VGA:VGA_inst|MC6847_gen3:VDG|INV_s                                      ; Merged with VGA:VGA_inst|MC6847_gen3:VDG|DD_s[6]                              ;
+; VGA:VGA_inst|MC6847_gen3:VDG|SA_s                                       ; Merged with VGA:VGA_inst|MC6847_gen3:VDG|DD_s[7]                              ;
+; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|n_LB_r_reg                ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[11]  ;
+; RIPTIDE_III:CPU_inst|latch_wren1                                        ; Merged with RIPTIDE_III:CPU_inst|WC1                                          ;
+; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|n_LB_w_reg                ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|latch_address_w_reg ;
+; RIPTIDE_III:CPU_inst|latch_wren4                                        ; Merged with RIPTIDE_III:CPU_inst|WC4                                          ;
+; RIPTIDE_III:CPU_inst|latch_wren3                                        ; Merged with RIPTIDE_III:CPU_inst|WC3                                          ;
+; RIPTIDE_III:CPU_inst|latch_wren2                                        ; Merged with RIPTIDE_III:CPU_inst|WC2                                          ;
+; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|alu_I_field_reg[2]        ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[2]   ;
+; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|alu_I_field_reg[3]        ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[3]   ;
+; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|alu_I_field_reg[4]        ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[4]   ;
+; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|rotate_S0_reg[0]          ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[8]   ;
+; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|rotate_S0_reg[1]          ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[9]   ;
+; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|rotate_S0_reg[2]          ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[10]  ;
+; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|alu_I_field_reg[1]        ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[1]   ;
+; RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|alu_I_field_reg[0]        ; Merged with RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|PC_I_field_reg[0]   ;
+; SDRAM8_SP8_B8_I:SDRAM_controller|address_hold[0]                        ; Stuck at GND due to stuck port data_in                                        ;
+; SDRAM8_SP8_B8_I:SDRAM_controller|queue_8_8:init_fifo_inst|write_addr[0] ; Merged with SDRAM8_SP8_B8_I:SDRAM_controller|init_address[0]                  ;
+; SDRAM8_SP8_B8_I:SDRAM_controller|queue_8_8:init_fifo_inst|write_addr[1] ; Merged with SDRAM8_SP8_B8_I:SDRAM_controller|init_address[1]                  ;
+; SDRAM8_SP8_B8_I:SDRAM_controller|queue_8_8:init_fifo_inst|write_addr[2] ; Merged with SDRAM8_SP8_B8_I:SDRAM_controller|init_address[2]                  ;
+; SDRAM8_SP8_B8_I:SDRAM_controller|queue_8_8:init_fifo_inst|write_addr[3] ; Merged with SDRAM8_SP8_B8_I:SDRAM_controller|init_address[3]                  ;
+; SDRAM8_SP8_B8_I:SDRAM_controller|state~32                               ; Lost fanout                                                                   ;
+; SDRAM8_SP8_B8_I:SDRAM_controller|state~33                               ; Lost fanout                                                                   ;
+; SDRAM8_SP8_B8_I:SDRAM_controller|state~34                               ; Lost fanout                                                                   ;
+; SDRAM8_SP8_B8_I:SDRAM_controller|state~35                               ; Lost fanout                                                                   ;
+; SDRAM8_SP8_B8_I:SDRAM_controller|state~36                               ; Lost fanout                                                                   ;
+; SDRAM8_SP8_B8_I:SDRAM_controller|state~37                               ; Lost fanout                                                                   ;
+; memory_arbiter:arbiter_inst|state~9                                     ; Lost fanout                                                                   ;
+; memory_arbiter:arbiter_inst|state~10                                    ; Lost fanout                                                                   ;
+; memory_arbiter:arbiter_inst|state~12                                    ; Lost fanout                                                                   ;
+; memory_arbiter:arbiter_inst|state.S_PORT1_WRITE                         ; Stuck at GND due to stuck port data_in                                        ;
+; Total Number of Removed Registers = 102                                 ;                                                                               ;
++-------------------------------------------------------------------------+-------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -551,12 +553,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 2148  ;
-; Number of registers using Synchronous Clear  ; 226   ;
+; Total registers                              ; 2206  ;
+; Number of registers using Synchronous Clear  ; 227   ;
 ; Number of registers using Synchronous Load   ; 135   ;
-; Number of registers using Asynchronous Clear ; 550   ;
+; Number of registers using Asynchronous Clear ; 607   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1765  ;
+; Number of registers using Clock Enable       ; 1801  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -566,7 +568,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------------------------+---------+
 ; Inverted Register                                              ; Fan out ;
 +----------------------------------------------------------------+---------+
-; rst                                                            ; 630     ;
+; rst                                                            ; 689     ;
 ; keyboard:keyboard_inst|ps2_host:ps2_host_inst|tx_shift_reg[0]  ; 3       ;
 ; rst_s                                                          ; 1       ;
 ; keyboard:keyboard_inst|ps2_host:ps2_host_inst|tx_shift_reg[1]  ; 2       ;
@@ -576,7 +578,7 @@ Encoding Type:  One-Hot
 ; I2C_ri:i2c_ri_inst|I2C_phy:i2c_phy_inst|tx_frame[9]            ; 1       ;
 ; MSC:MSC_inst|p2_reset_req                                      ; 3       ;
 ; keyboard:keyboard_inst|ps2_host:ps2_host_inst|tx_shift_reg[3]  ; 2       ;
-; MSC:MSC_inst|p1_reset_req                                      ; 3       ;
+; MSC:MSC_inst|p1_reset_req                                      ; 4       ;
 ; I2C_ri:i2c_ri_inst|I2C_phy:i2c_phy_inst|tx_frame[0]            ; 2       ;
 ; I2C_ri:i2c_ri_inst|I2C_phy:i2c_phy_inst|tx_frame[1]            ; 2       ;
 ; I2C_ri:i2c_ri_inst|I2C_phy:i2c_phy_inst|tx_frame[2]            ; 2       ;
@@ -596,12 +598,12 @@ Encoding Type:  One-Hot
 ; serial:serial_inst|UART:UART_inst|rx_frame[1]                  ; 2       ;
 ; serial:serial_inst|UART:UART_inst|rx_s                         ; 2       ;
 ; serial:serial_inst|UART:UART_inst|rx_frame[2]                  ; 2       ;
-; serial:serial_inst|UART:UART_inst|rx_frame[4]                  ; 2       ;
-; serial:serial_inst|UART:UART_inst|rx_frame[3]                  ; 2       ;
 ; serial:serial_inst|UART:UART_inst|rx_frame[6]                  ; 2       ;
 ; serial:serial_inst|UART:UART_inst|rx_frame[5]                  ; 2       ;
 ; serial:serial_inst|UART:UART_inst|rx_frame[8]                  ; 2       ;
 ; serial:serial_inst|UART:UART_inst|rx_frame[7]                  ; 2       ;
+; serial:serial_inst|UART:UART_inst|rx_frame[4]                  ; 2       ;
+; serial:serial_inst|UART:UART_inst|rx_frame[3]                  ; 2       ;
 ; serial:serial_inst|UART:UART_inst|rx_frame[9]                  ; 1       ;
 ; keyboard:keyboard_inst|ps2_host:ps2_host_inst|rx_shift_reg[11] ; 2       ;
 ; Total number of inverted registers = 38                        ;         ;
@@ -613,91 +615,91 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|ps2_host:ps2_host_inst|rx_data[6]      ;
-; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |R3_PVP|memory_arbiter:arbiter_inst|mem_address_base[15]              ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|queue_8_8:tx_queue|read_addr[1]            ;
-; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|refresh_timer[5]             ;
-; 3:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|init_address[5]              ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |R3_PVP|I2C_ri:i2c_ri_inst|to_CPU[3]                                  ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |R3_PVP|I2C_ri:i2c_ri_inst|to_CPU[4]                                  ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|to_cpu[7]                                    ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|to_cpu[0]                                    ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|queue_8_8:tx_queue|write_addr[0]           ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|queue_8_8:tx_queue|read_addr[2]        ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|pixel_count[1]                   ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|init_refresh_count[0]        ;
-; 3:1                ; 36 bits   ; 72 LEs        ; 36 LEs               ; 36 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|mask_L1[0]                               ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|queue_8_8:tx_queue|write_addr[3]       ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|horiz_scaler[2]                  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |R3_PVP|MSC:MSC_inst|p2_reset_reg                                     ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |R3_PVP|I2C_ri:i2c_ri_inst|I2C_phy:i2c_phy_inst|clk_div[3]            ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|I_alternate[5]  ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|I2C_ri:i2c_ri_inst|start_req                                  ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|interrupt_controller:intcon_inst|status[3]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|ps2_host:ps2_host_inst|rx_data[2]      ;
+; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |R3_PVP|memory_arbiter:arbiter_inst|mem_address_base[1]               ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|queue_8_8:tx_queue|read_addr[3]            ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|refresh_timer[6]             ;
+; 3:1                ; 22 bits   ; 44 LEs        ; 22 LEs               ; 22 LEs                 ; Yes        ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|init_address[9]              ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |R3_PVP|I2C_ri:i2c_ri_inst|to_CPU[2]                                  ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |R3_PVP|I2C_ri:i2c_ri_inst|to_CPU[6]                                  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|to_cpu[6]                                    ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|to_cpu[1]                                    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|queue_8_8:tx_queue|write_addr[2]           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|queue_8_8:tx_queue|read_addr[0]        ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|pixel_count[7]                   ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|init_refresh_count[1]        ;
+; 3:1                ; 36 bits   ; 72 LEs        ; 36 LEs               ; 36 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|mask_L1[1]                               ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|queue_8_8:tx_queue|write_addr[1]       ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|horiz_scaler[1]                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |R3_PVP|MSC:MSC_inst|p2_flush_reg                                     ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |R3_PVP|I2C_ri:i2c_ri_inst|I2C_phy:i2c_phy_inst|clk_div[2]            ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|I_alternate[4]  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|I2C_ri:i2c_ri_inst|stop_req                                   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|interrupt_controller:intcon_inst|status[4]                    ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |R3_PVP|interrupt_controller:intcon_inst|control[5]                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|rx_data[4]                  ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|A_current_I_alternate[13]         ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|rx_data[0]                  ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|A_current_I_alternate[2]          ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|call_stack:cstack0|address[3]     ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|queue_8_8:rx_queue|read_addr[0]        ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|queue_8_8:rx_queue|read_addr[3]        ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|queue_8_8:rx_queue|read_addr[3]            ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|A_pipe1[13]                       ;
-; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|A_pipe0[9]                        ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|A_pipe1[0]                        ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|A_pipe0[13]                       ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|rotate_mux_reg  ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|ps2_host:ps2_host_inst|timer[4]        ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 26 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|ps2_host:ps2_host_inst|timer[5]        ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |R3_PVP|memory_arbiter:arbiter_inst|mem_address_base[12]              ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|led_reg[0]                                                    ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|tx_timer[1]                 ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|led_reg[2]                                                    ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|tx_timer[0]                 ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|G[0]                             ;
-; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |R3_PVP|keyboard:keyboard_inst|ps2_host:ps2_host_inst|rx_shift_reg[5] ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|line_count[4]                    ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |R3_PVP|keyboard:keyboard_inst|ps2_host:ps2_host_inst|rx_shift_reg[1] ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|line_count[3]                    ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|NZT             ;
-; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|ALU:ALU0|alu_reg[2]                      ;
-; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|p_cache:p_cache_inst|CPU_address_hold[3]                      ;
+; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|ALU:ALU0|alu_reg[1]                      ;
+; 4:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|p_cache:p_cache_inst|CPU_address_hold[11]                     ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|interrupt_controller:intcon_inst|timer[0]                     ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|A_current_I[1]                    ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|counter[22]                                  ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|counter[8]                                   ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|counter[3]                                   ;
-; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|rx_timer[4]                 ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|memory_arbiter:arbiter_inst|burst_offset[2]                   ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|sdram_a[0]                   ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|A_current_I[11]                   ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|counter[16]                                  ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|counter[12]                                  ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|timer:timer_inst|counter[7]                                   ;
+; 4:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|rx_timer[3]                 ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |R3_PVP|memory_arbiter:arbiter_inst|burst_offset[0]                   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|sdram_a[1]                   ;
 ; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|sdram_a[3]                   ;
-; 5:1                ; 13 bits   ; 39 LEs        ; 26 LEs               ; 13 LEs                 ; Yes        ; |R3_PVP|d_cache:d_cache_inst|CPU_address_hold[12]                     ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|col_count[3]                     ;
-; 15:1               ; 8 bits    ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|reg_file:reg_file0|a_reg[4]              ;
-; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|I_reg[15]       ;
+; 5:1                ; 13 bits   ; 39 LEs        ; 26 LEs               ; 13 LEs                 ; Yes        ; |R3_PVP|d_cache:d_cache_inst|CPU_address_hold[10]                     ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|col_count[5]                     ;
+; 15:1               ; 8 bits    ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|reg_file:reg_file0|a_reg[3]              ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 32 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|I_reg[1]        ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|cell_count[2]                    ;
-; 9:1                ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|IV_in[6]                                 ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|tx_frame[7]                 ;
-; 5:1                ; 18 bits   ; 54 LEs        ; 36 LEs               ; 18 LEs                 ; Yes        ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|address_hold[6]              ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|cell_line[0]                     ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|vert_scaler[1]                   ;
+; 9:1                ; 8 bits    ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|IV_in[0]                                 ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|tx_frame[2]                 ;
+; 5:1                ; 18 bits   ; 54 LEs        ; 36 LEs               ; 18 LEs                 ; Yes        ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|address_hold[13]             ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|cell_line[2]                     ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|vert_scaler[0]                   ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|alu_op_reg[0]   ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|row_count[1]                     ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|row_count[3]                     ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|decode_unit:decode_unit0|RC_reg          ;
-; 7:1                ; 5 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|PC_reg[7]                         ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|PC_reg[2]                         ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|PC_reg[14]                        ;
-; 12:1               ; 8 bits    ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|memory_arbiter:arbiter_inst|memory_p1_to_mem[6]               ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|burst_count[1]               ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|ps2_host:ps2_host_inst|tx_shift_reg[3] ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|I2C_ri:i2c_ri_inst|I2C_phy:i2c_phy_inst|tx_frame[9]           ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|data_out[0]                  ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|rx_frame[0]                 ;
+; 7:1                ; 5 bits    ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|PC_reg[4]                         ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|PC_reg[0]                         ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|RIPTIDE_III:CPU_inst|PC:PC0|PC_reg[13]                        ;
+; 12:1               ; 8 bits    ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; Yes        ; |R3_PVP|memory_arbiter:arbiter_inst|memory_p1_to_mem[1]               ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 3 LEs                ; 9 LEs                  ; Yes        ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|burst_count[0]               ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|keyboard:keyboard_inst|ps2_host:ps2_host_inst|tx_shift_reg[8] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|I2C_ri:i2c_ri_inst|I2C_phy:i2c_phy_inst|tx_frame[3]           ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|data_out[4]                  ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |R3_PVP|serial:serial_inst|UART:UART_inst|rx_frame[7]                 ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|Mux2                             ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|RIPTIDE_III:CPU_inst|reg_file:reg_file0|a_data[7]             ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|RIPTIDE_III:CPU_inst|alu_b_mux_out[6]                         ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |R3_PVP|p_cache:p_cache_inst|Mux2                                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[7]                               ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[32]                              ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[19]                              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|RIPTIDE_III:CPU_inst|reg_file:reg_file0|a_data[2]             ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|RIPTIDE_III:CPU_inst|alu_b_mux_out[2]                         ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |R3_PVP|p_cache:p_cache_inst|Mux15                                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[1]                               ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[33]                              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[23]                              ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[52]                              ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[9]                               ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[42]                              ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[30]                              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[15]                              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[40]                              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[29]                              ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |R3_PVP|d_cache:d_cache_inst|cache_d[60]                              ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |R3_PVP|VGA:VGA_inst|MC6847_gen3:VDG|next_R[0]                        ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |R3_PVP|RIPTIDE_III:CPU_inst|shift_merge:shift_merge0|Mux4            ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |R3_PVP|RIPTIDE_III:CPU_inst|shift_merge:shift_merge0|Mux1            ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |R3_PVP|memory_arbiter:arbiter_inst|Selector6                         ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |R3_PVP|memory_arbiter:arbiter_inst|Selector8                         ;
 ; 14:1               ; 5 bits    ; 45 LEs        ; 30 LEs               ; 15 LEs                 ; No         ; |R3_PVP|SDRAM8_SP8_B8_I:SDRAM_controller|state                        ;
@@ -1604,38 +1606,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 53                          ;
-; cycloneiii_ff         ; 2148                        ;
-;     CLR               ; 53                          ;
+; boundary_port         ; 59                          ;
+; cycloneiii_ff         ; 2206                        ;
+;     CLR               ; 74                          ;
 ;     CLR SCLR          ; 5                           ;
 ;     CLR SLD           ; 12                          ;
-;     ENA               ; 1118                        ;
-;     ENA CLR           ; 452                         ;
+;     ENA               ; 1117                        ;
+;     ENA CLR           ; 488                         ;
 ;     ENA CLR SCLR      ; 8                           ;
 ;     ENA CLR SLD       ; 20                          ;
-;     ENA SCLR          ; 81                          ;
+;     ENA SCLR          ; 82                          ;
 ;     ENA SCLR SLD      ; 45                          ;
 ;     ENA SLD           ; 41                          ;
 ;     SCLR              ; 85                          ;
 ;     SCLR SLD          ; 2                           ;
 ;     SLD               ; 15                          ;
-;     plain             ; 211                         ;
+;     plain             ; 212                         ;
 ; cycloneiii_io_obuf    ; 10                          ;
-; cycloneiii_lcell_comb ; 2550                        ;
-;     arith             ; 230                         ;
-;         2 data inputs ; 199                         ;
-;         3 data inputs ; 31                          ;
-;     normal            ; 2320                        ;
+; cycloneiii_lcell_comb ; 2587                        ;
+;     arith             ; 238                         ;
+;         2 data inputs ; 208                         ;
+;         3 data inputs ; 30                          ;
+;     normal            ; 2349                        ;
 ;         0 data inputs ; 3                           ;
-;         1 data inputs ; 26                          ;
-;         2 data inputs ; 202                         ;
-;         3 data inputs ; 586                         ;
-;         4 data inputs ; 1503                        ;
+;         1 data inputs ; 27                          ;
+;         2 data inputs ; 210                         ;
+;         3 data inputs ; 598                         ;
+;         4 data inputs ; 1511                        ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 162                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 3.10                        ;
+; Average LUT depth     ; 3.06                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1654,9 +1656,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sat Jul 09 09:02:28 2022
+    Info: Processing started: Sat Jul 23 21:55:45 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RIPTIDE-III_DragonBoard_V12 -c R3_PVP
 Info (20032): Parallel compilation is enabled and will use up to 16 processors
+Info (12021): Found 1 design units, including 1 entities, in source file nes_joypad.sv
+    Info (12023): Found entity 1: nes_joypad File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/nes_joypad.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file button_debounce.sv
+    Info (12023): Found entity 1: button_debounce File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/button_debounce.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga.v
     Info (12023): Found entity 1: VGA File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/VGA.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file toplevel.v
@@ -1723,7 +1729,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file cpu/dec
 Info (12021): Found 1 design units, including 1 entities, in source file cpu/alu.v
     Info (12023): Found entity 1: ALU File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/CPU/ALU.v Line: 1
 Info (12127): Elaborating entity "R3_PVP" for the top level hierarchy
-Info (12128): Elaborating entity "PLL0" for hierarchy "PLL0:PLL_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 130
+Info (12128): Elaborating entity "PLL0" for hierarchy "PLL0:PLL_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 135
 Info (12128): Elaborating entity "altpll" for hierarchy "PLL0:PLL_inst|altpll:altpll_component" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/PLL0.v Line: 99
 Info (12130): Elaborated megafunction instantiation "PLL0:PLL_inst|altpll:altpll_component" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/PLL0.v Line: 99
 Info (12133): Instantiated megafunction "PLL0:PLL_inst|altpll:altpll_component" with the following parameter: File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/PLL0.v Line: 99
@@ -1792,10 +1798,8 @@ Info (12133): Instantiated megafunction "PLL0:PLL_inst|altpll:altpll_component" 
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll0_altpll.v
     Info (12023): Found entity 1: PLL0_altpll File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/db/pll0_altpll.v Line: 30
 Info (12128): Elaborating entity "PLL0_altpll" for hierarchy "PLL0:PLL_inst|altpll:altpll_component|PLL0_altpll:auto_generated" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Warning (12125): Using design file button_debounce.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: button_debounce File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/button_debounce.sv Line: 1
-Info (12128): Elaborating entity "button_debounce" for hierarchy "button_debounce:debounce_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 192
-Info (12128): Elaborating entity "p_cache" for hierarchy "p_cache:p_cache_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 216
+Info (12128): Elaborating entity "button_debounce" for hierarchy "button_debounce:debounce_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 204
+Info (12128): Elaborating entity "p_cache" for hierarchy "p_cache:p_cache_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 228
 Info (12128): Elaborating entity "p_mem" for hierarchy "p_cache:p_cache_inst|p_mem:p_mem_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/p_cache.v Line: 101
 Info (12128): Elaborating entity "altsyncram" for hierarchy "p_cache:p_cache_inst|p_mem:p_mem_inst|altsyncram:altsyncram_component" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/p_mem.v Line: 86
 Info (12130): Elaborated megafunction instantiation "p_cache:p_cache_inst|p_mem:p_mem_inst|altsyncram:altsyncram_component" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/p_mem.v Line: 86
@@ -1817,11 +1821,11 @@ Info (12133): Instantiated megafunction "p_cache:p_cache_inst|p_mem:p_mem_inst|a
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_k6g1.tdf
     Info (12023): Found entity 1: altsyncram_k6g1 File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/db/altsyncram_k6g1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_k6g1" for hierarchy "p_cache:p_cache_inst|p_mem:p_mem_inst|altsyncram:altsyncram_component|altsyncram_k6g1:auto_generated" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "d_cache" for hierarchy "d_cache:d_cache_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 249
-Info (12128): Elaborating entity "memory_arbiter" for hierarchy "memory_arbiter:arbiter_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 293
-Info (12128): Elaborating entity "SDRAM8_SP8_B8_I" for hierarchy "SDRAM8_SP8_B8_I:SDRAM_controller" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 321
+Info (12128): Elaborating entity "d_cache" for hierarchy "d_cache:d_cache_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 261
+Info (12128): Elaborating entity "memory_arbiter" for hierarchy "memory_arbiter:arbiter_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 305
+Info (12128): Elaborating entity "SDRAM8_SP8_B8_I" for hierarchy "SDRAM8_SP8_B8_I:SDRAM_controller" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 333
 Info (12128): Elaborating entity "queue_8_8" for hierarchy "SDRAM8_SP8_B8_I:SDRAM_controller|queue_8_8:init_fifo_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/SDRAM_SP8_B8_I.sv Line: 110
-Info (12128): Elaborating entity "PRG_ROM" for hierarchy "PRG_ROM:PRG_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 331
+Info (12128): Elaborating entity "PRG_ROM" for hierarchy "PRG_ROM:PRG_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 343
 Info (12128): Elaborating entity "altsyncram" for hierarchy "PRG_ROM:PRG_inst|altsyncram:altsyncram_component" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/PRG_ROM.v Line: 82
 Info (12130): Elaborated megafunction instantiation "PRG_ROM:PRG_inst|altsyncram:altsyncram_component" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/PRG_ROM.v Line: 82
 Info (12133): Instantiated megafunction "PRG_ROM:PRG_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/PRG_ROM.v Line: 82
@@ -1842,16 +1846,16 @@ Info (12133): Instantiated megafunction "PRG_ROM:PRG_inst|altsyncram:altsyncram_
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_vha1.tdf
     Info (12023): Found entity 1: altsyncram_vha1 File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/db/altsyncram_vha1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_vha1" for hierarchy "PRG_ROM:PRG_inst|altsyncram:altsyncram_component|altsyncram_vha1:auto_generated" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "I2C_ri" for hierarchy "I2C_ri:i2c_ri_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 351
+Info (12128): Elaborating entity "I2C_ri" for hierarchy "I2C_ri:i2c_ri_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 363
 Info (12128): Elaborating entity "I2C_phy" for hierarchy "I2C_ri:i2c_ri_inst|I2C_phy:i2c_phy_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/I2C_ri.sv Line: 96
-Info (12128): Elaborating entity "serial" for hierarchy "serial:serial_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 373
+Info (12128): Elaborating entity "serial" for hierarchy "serial:serial_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 385
 Info (12128): Elaborating entity "UART" for hierarchy "serial:serial_inst|UART:UART_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/serial.sv Line: 76
-Info (12128): Elaborating entity "keyboard" for hierarchy "keyboard:keyboard_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 395
+Info (12128): Elaborating entity "keyboard" for hierarchy "keyboard:keyboard_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 407
 Info (12128): Elaborating entity "ps2_host" for hierarchy "keyboard:keyboard_inst|ps2_host:ps2_host_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/keyboard.sv Line: 88
-Info (12128): Elaborating entity "timer" for hierarchy "timer:timer_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 415
-Info (12128): Elaborating entity "interrupt_controller" for hierarchy "interrupt_controller:intcon_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 442
-Info (12128): Elaborating entity "MSC" for hierarchy "MSC:MSC_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 463
-Info (12128): Elaborating entity "VGA" for hierarchy "VGA:VGA_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 485
+Info (12128): Elaborating entity "timer" for hierarchy "timer:timer_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 427
+Info (12128): Elaborating entity "interrupt_controller" for hierarchy "interrupt_controller:intcon_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 454
+Info (12128): Elaborating entity "MSC" for hierarchy "MSC:MSC_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 475
+Info (12128): Elaborating entity "VGA" for hierarchy "VGA:VGA_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 497
 Info (12128): Elaborating entity "VGA_RAM" for hierarchy "VGA:VGA_inst|VGA_RAM:RAM_VGA" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/VGA.v Line: 34
 Info (12128): Elaborating entity "altsyncram" for hierarchy "VGA:VGA_inst|VGA_RAM:RAM_VGA|altsyncram:altsyncram_component" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/VGA_RAM.v Line: 98
 Info (12130): Elaborated megafunction instantiation "VGA:VGA_inst|VGA_RAM:RAM_VGA|altsyncram:altsyncram_component" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/VGA_RAM.v Line: 98
@@ -1907,7 +1911,8 @@ Info (12133): Instantiated megafunction "VGA:VGA_inst|MC6847_gen3:VDG|CHR_ROM:CH
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_57a1.tdf
     Info (12023): Found entity 1: altsyncram_57a1 File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/db/altsyncram_57a1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_57a1" for hierarchy "VGA:VGA_inst|MC6847_gen3:VDG|CHR_ROM:CHR_inst|altsyncram:altsyncram_component|altsyncram_57a1:auto_generated" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "RIPTIDE_III" for hierarchy "RIPTIDE_III:CPU_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 539
+Info (12128): Elaborating entity "nes_joypad" for hierarchy "nes_joypad:nes_joypad_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 515
+Info (12128): Elaborating entity "RIPTIDE_III" for hierarchy "RIPTIDE_III:CPU_inst" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 574
 Info (12128): Elaborating entity "reg_file" for hierarchy "RIPTIDE_III:CPU_inst|reg_file:reg_file0" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/CPU/RIPTIDE-III.v Line: 343
 Info (12128): Elaborating entity "right_rotate" for hierarchy "RIPTIDE_III:CPU_inst|right_rotate:right_rotate0" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/CPU/RIPTIDE-III.v Line: 352
 Info (12128): Elaborating entity "mask_unit" for hierarchy "RIPTIDE_III:CPU_inst|mask_unit:mask0" File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/CPU/RIPTIDE-III.v Line: 362
@@ -1935,23 +1940,23 @@ Info (276014): Found 6 instances of uninferred RAM logic
 Info (13000): Registers with preset signals will power-up high File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/MSC.v Line: 47
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "sdram_cke" is stuck at VCC File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 49
-    Warning (13410): Pin "sdram_cs_n" is stuck at GND File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 50
+    Warning (13410): Pin "sdram_cke" is stuck at VCC File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 53
+    Warning (13410): Pin "sdram_cs_n" is stuck at GND File: C:/Users/Steve/Workspace/RIPTIDE-III_DragonBoard_V12/toplevel.v Line: 54
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 9 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3989 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 34 output pins
+Info (21057): Implemented 4068 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 38 output pins
     Info (21060): Implemented 10 bidirectional pins
-    Info (21061): Implemented 3773 logic cells
+    Info (21061): Implemented 3846 logic cells
     Info (21064): Implemented 162 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 4887 megabytes
-    Info: Processing ended: Sat Jul 09 09:02:41 2022
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4880 megabytes
+    Info: Processing ended: Sat Jul 23 21:55:58 2022
     Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:21
+    Info: Total CPU time (on all processors): 00:00:22
 
 

@@ -10,8 +10,8 @@ Registers in the MSC can be used to set the program and data page offsets, and i
 The test platform also includes an RS-232 controller, a VGA controller based on the MC6847, a timer module, a PS/2 module, and an interrupt controller with 8 inputs.  
 
 # Instruction Set and Assembler
-The RIPTIDE-II processor has the same instruction set and encoding as the 8X-RIPTIDE processor, so the 8X-RIPTIDE assembler can be used to generate code for it.  
-This CPU is not software compatible with previous riptide processors, as the OVF register cannot be rotated, and NZT and XEC instructions cannot use the IV bus as a source register.  
+The RIPTIDE-III processor has the same instruction set and encoding as the 8X-RIPTIDE and RIPTIDE-II processors, so the 8X-RIPTIDE assembler can be used to generate code for it.  
+This CPU is not software compatible with previous riptide processors, as the OVF register cannot be used for branch instructions, and NZT and XEC instructions cannot use the IV bus as a source register.  
 These changes were made to increase the IPC by reducing the frequency of pipeline stall cycles and allowing branch instructions to be resolved earlier.  
 In addition to the architectural changes listed above, the bit-naming convention was changed from 0:7 to 7:0. This was done to avoid confusion, as 7:0 is far more common.  
 

@@ -250,5 +250,6 @@ Made changes to interrupt controller:
 Created nes_joypad module.
 
 Revision 13:
-
+Copied ps2_host module from Basys2_keyboard project.
+Updated ROM code.
 	

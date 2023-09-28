@@ -1,1 +1,0 @@
-Warning (10268): Verilog HDL information at I2C_phy.sv(45): always construct contains both blocking and non-blocking assignments File: C:/Users/Steve/Workspace/RIPTIDE-III_SDRAM/I2C_phy.sv Line: 45

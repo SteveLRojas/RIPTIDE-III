@@ -235,3 +235,4 @@ Copied other files from the same project:
 	Copied queue_8_8 module (replaced the one in serial.sv).
 	Copied I2C_ri.sv
 	Copied I2C_phy.sv
+Fixed bug in CPU PC module (wrong return address pushed for interrupts).
